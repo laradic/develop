@@ -1,0 +1,8 @@
+<?php foreach($methods as $method): ?>
+    <?php echo $method; ?> => [
+        '' == '@',
+        <?php foreach($data as $k => $v): ?>
+            '<?php echo $k; ?>' instanceof <?php echo \Sebwite\Support\Str::ensureLeft(is_string($v) && class_exists($v, false) ? $v : 'null', '\\'); ?>,
+        <?php endforeach; ?>
+    ],
+<?php endforeach; ?>

@@ -158,7 +158,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Laradic\Phpstorm\Autocomplete\AutocompleteServiceProvider::class
+        Laradic\Phpstorm\Autocomplete\AutocompleteServiceProvider::class,
+        Radic\BladeExtensions\BladeExtensionsServiceProvider::class,
+
     ],
 
     /*

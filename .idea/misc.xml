@@ -6,13 +6,6 @@
     <option name="name" value="default" />
   </component>
   <component name="IdProvider" IDEtalkID="BE8DF1FE03632DDA4090856900F9AA96" />
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />

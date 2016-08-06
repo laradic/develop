@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Providers\Log4PhpServiceProvider;
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;
 
@@ -12,14 +13,14 @@ class Inspire extends Command
      *
      * @var string
      */
-    protected $signature = 'inspire';
+    protected $signature = 'test';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Display an inspiring quote';
+    protected $description = '';
 
     /**
      * Execute the console command.
@@ -28,6 +29,7 @@ class Inspire extends Command
      */
     public function handle()
     {
-        $this->comment(PHP_EOL.Inspiring::quote().PHP_EOL);
+        $this->getLaravel()->make(Log4PhpServiceProvider::class);
+
     }
 }

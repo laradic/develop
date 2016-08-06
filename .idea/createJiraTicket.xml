@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CreateJiraTicketConfiguration">
+    <option name="jiraUrl" value="https://projects.radic.nl" />
+    <option name="password" value="1234vijf" />
+    <option name="project" value="LARADIC" />
+    <option name="username" value="radic" />
+  </component>
+</project>

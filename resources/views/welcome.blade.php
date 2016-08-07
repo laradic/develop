@@ -39,6 +39,9 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
+                @set($a, 'asd')
+                @set($a, 'asd')
+                @set($a, 'asd')
             </div>
         </div>
     </body>

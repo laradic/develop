@@ -162,7 +162,7 @@ return [
 
 
         Laradic\Phpstorm\Autocomplete\AutocompleteServiceProvider::class,
-        Radic\BladeExtensions\BladeExtensionsServiceProvider::class,
+        Radic\BladeExtensions\Seven\Provider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],

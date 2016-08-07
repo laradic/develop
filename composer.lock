@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f41d46da7ac36d08806ad398c57dd9b5",
-    "content-hash": "cf44b87d25bd2e2233786102cad431f6",
+    "hash": "863157bc8d025b4fb9eedfce3085c1bd",
+    "content-hash": "f161e82c537ea18c746b6c3dc8e678a4",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
@@ -56,36 +56,6 @@
                 "toolkit"
             ],
             "time": "2015-05-16 19:24:58"
-        },
-        {
-            "name": "apache/log4php",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git-wip-us.apache.org/repos/asf/logging-log4php.git",
-                "reference": "8c6df2481cd68d0d211d38f700406c5f0a9de0c2"
-            },
-            "require": {
-                "php": ">=5.2.7"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/main/php/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "A versatile logging framework for PHP",
-            "homepage": "http://logging.apache.org/log4php/",
-            "keywords": [
-                "log",
-                "logging",
-                "php"
-            ],
-            "time": "2012-10-26 09:13:25"
         },
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1890,6 +1860,56 @@
                 "xunit"
             ],
             "time": "2015-10-02 06:51:40"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16 16:22:20"
         },
         {
             "name": "psr/log",

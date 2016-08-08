@@ -62,6 +62,8 @@
         "laradic/support": "*",
         "laradic/testing": "*",
         "laradic/phing": "*",
+        "laradic/filesystem": "*",
+        "laradic/git": "*",
         "laradic/phpstorm-autocomplete": "*",
         "radic/blade-extensions": "*"
     }

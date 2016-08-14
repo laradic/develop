@@ -13,18 +13,18 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\Inspire::class,
+        \App\Inspire::class,
     ];
 
-    /**
-     * Define the application's command schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-     * @return void
-     */
-    protected function schedule(Schedule $schedule)
-    {
-        // $schedule->command('inspire')
-        //          ->hourly();
-    }
+    protected $bootstrappers = [
+        'Illuminate\Foundation\Bootstrap\DetectEnvironment',
+        'Illuminate\Foundation\Bootstrap\LoadConfiguration',
+        #'Illuminate\Foundation\Bootstrap\ConfigureLogging',
+        'App\Bootstrap\ConfigureLogging',
+        'Illuminate\Foundation\Bootstrap\HandleExceptions',
+        'Illuminate\Foundation\Bootstrap\RegisterFacades',
+        'Illuminate\Foundation\Bootstrap\SetRequestForConsole',
+        'Illuminate\Foundation\Bootstrap\RegisterProviders',
+        'Illuminate\Foundation\Bootstrap\BootProviders',
+    ];
 }

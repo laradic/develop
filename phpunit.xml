@@ -12,6 +12,9 @@
         <testsuite name="Application Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
+        <testsuite name="Service Provider Test Suite">
+            <directory suffix="Test.php">./workbench/laradic/service-provider/tests</directory>
+        </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">

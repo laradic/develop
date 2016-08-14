@@ -4,6 +4,8 @@
     "keywords": ["laradic"],
     "license": "MIT",
     "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
@@ -53,7 +55,14 @@
     "extra": {
         "merge-plugin": {
             "include": [
-                "workbench/laradic/*/composer.json",
+                "workbench/laradic/support/composer.json",
+                "workbench/laradic/testing/composer.json",
+                "workbench/laradic/phing/composer.json",
+                "workbench/laradic/icon-generator/composer.json",
+                "workbench/laradic/idea/composer.json",
+                "workbench/laradic/filesystem/composer.json",
+                "workbench/laradic/service-provider/composer.json",
+                "workbench/laradic/dependency-sorter/composer.json",
                 "workbench/radic/*/composer.json"
             ]
         }
@@ -64,6 +73,10 @@
         "laradic/phing": "*",
         "laradic/filesystem": "*",
         "laradic/git": "*",
+        "laradic/idea": "*",
+        "laradic/icon-generator": "*",
+        "laradic/service-provider": "*",
+        "laradic/dependency-sorter": "*",
         "laradic/phpstorm-autocomplete": "*",
         "radic/blade-extensions": "*"
     }

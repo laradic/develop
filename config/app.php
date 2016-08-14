@@ -147,7 +147,6 @@ return [
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
         #Illuminate\Translation\TranslationServiceProvider::class,
-        Laradic\Phpstorm\Autocomplete\Translation\TranslationServiceProvider::class,
 
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
@@ -161,9 +160,10 @@ return [
         App\Providers\RouteServiceProvider::class,
 
 
-        Laradic\Phpstorm\Autocomplete\AutocompleteServiceProvider::class,
         Radic\BladeExtensions\Seven\Provider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        \Laradic\Idea\IdeaServiceProvider::class,
 
     ],
 

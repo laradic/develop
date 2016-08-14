@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App;
 
-use App\Providers\Log4PhpServiceProvider;
+use Codex\Support\IconGenerator;
 use Illuminate\Console\Command;
-use Illuminate\Foundation\Inspiring;
 
 class Inspire extends Command
 {
@@ -22,14 +21,20 @@ class Inspire extends Command
      */
     protected $description = '';
 
-    /**
-     * Execute the console command.
-     *
-     * @return mixed
-     */
     public function handle()
     {
-        $this->getLaravel()->make(Log4PhpServiceProvider::class);
+        $ig = new IconGenerator();
+        $ig->set
 
+        $a = 'a';
+    }
+
+
+    public function handle2()
+    {
+        $be = app('blade-extensions');
+
+        $w = view('welcome')->render();
+        $a = 'a';
     }
 }

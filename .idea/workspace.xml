@@ -2,49 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e0e4550-e971-45e2-b870-f49f387edfca" name="Default" comment="Merge remote-tracking branch 'origin/develop' into develop&#10;&#10;Conflicts:&#10;&#9;.travis.yml&#10;&#9;src/BladeExtensionsServiceProvider.php&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/laradic.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Bench.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/workbench/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/workbench/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/workbench/build.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/workbench/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/workbench/local.build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/workbench/phpunit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/docs/class.puml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Preview/BladePreviewController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Providers/BladeMarkdownServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Providers/BladePreviewServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Providers/BladeServiceProvider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Registry.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/dependency-sorting.md" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/config/sebwite.filesystem.php" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/config/laradic.filesystem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Bootstrap/ConfigureLogging.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/create-mirrored-repo.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/set-remote-url.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tail-err.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Contracts/AssetFinder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Contracts/Factory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/console/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/console/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/src/Dependable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/src/Sortable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/docs/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/docs/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/docs/assets/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/docs/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/docs/menu.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Facades.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Helpers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/testdata/package-one/composer.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Laravel/Command.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Laravel/Kernel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/src/DependencySorter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/config/laradic.filesystem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/src/FilesystemServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/MetadataServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/MyCustomServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/ProviderActionPoint.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/ProviderRegisterMethod.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/ServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/Fixture/ServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/Fixture/TestServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/ServiceProviderTest.php" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterPath="$PROJECT_DIR$/app/Inspire.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/workbench/laradic/assets/config/sebwite.assets.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/config/laradic.assets.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/workbench/laradic/console/config/sebwite.console.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/config/laradic.console.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/Commands/Seeder.php" afterPath="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/Seeder.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/config/laradic.custom-provider.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/config/laradic.service-provider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/laradic.iml" afterPath="$PROJECT_DIR$/.idea/laradic.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpstorm.meta.php" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/stubs/147043212857a50380411b6" afterPath="$PROJECT_DIR$/storage/stubs/147043212857a50380411b6" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/stubs/147043225757a5040138533" afterPath="$PROJECT_DIR$/storage/stubs/147043225757a5040138533" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/stubs/147043227157a5040f1a9f3" afterPath="$PROJECT_DIR$/storage/stubs/147043227157a5040f1a9f3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/LICENSE.md" afterPath="$PROJECT_DIR$/workbench/laradic/assets/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/README.md" afterPath="$PROJECT_DIR$/workbench/laradic/assets/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/assets/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/assets/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/docs/index.md" afterPath="$PROJECT_DIR$/workbench/laradic/assets/docs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/docs/installation.md" afterPath="$PROJECT_DIR$/workbench/laradic/assets/docs/installation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/docs/usage/creating.md" afterPath="$PROJECT_DIR$/workbench/laradic/assets/docs/usage/creating.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/docs/usage/introduction.md" afterPath="$PROJECT_DIR$/workbench/laradic/assets/docs/usage/introduction.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/local.build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/assets/local.build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/AssetFinder.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/AssetFinder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Assetic/Asset.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Assetic/Asset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Assetic/AssetCollection.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Assetic/AssetCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Assetic/AssetInterface.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Assetic/AssetInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/AssetsServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/AssetsServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Builder/Area.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Builder/Area.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Builder/BuilderInterface.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Builder/BuilderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Builder/Group.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Builder/Group.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Compiler/Compiled.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Compiler/Compiled.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Compiler/CompiledCollection.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Compiler/CompiledCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Compiler/Compiler.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Compiler/Compiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Exceptions/AssetNotFoundException.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Exceptions/AssetNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Facades/Asset.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Facades/Asset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Factory.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Factory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Filters/UriRewriteFilter.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Filters/UriRewriteFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Helper.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/src/Traits/ProvidesAssets.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/src/Traits/ProvidesAssets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/tests/AssetsServiceProviderTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/tests/AssetsServiceProviderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/assets/tests/TestCase.php" afterPath="$PROJECT_DIR$/workbench/laradic/assets/tests/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/console/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/console/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/docs/commands/command.md" afterPath="$PROJECT_DIR$/workbench/laradic/console/docs/commands/command.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/docs/commands/hide-disable-dev.md" afterPath="$PROJECT_DIR$/workbench/laradic/console/docs/commands/hide-disable-dev.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/docs/index.md" afterPath="$PROJECT_DIR$/workbench/laradic/console/docs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/local.build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/console/local.build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Artisan.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Artisan.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Command.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Command.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Commands/GlobalCommand.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Commands/GlobalCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Commands/HelpCommand.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Commands/HelpCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Commands/ListCommand.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Commands/ListCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/ConsoleServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/ConsoleServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Descriptor/DescriptorHelper.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Descriptor/DescriptorHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Descriptor/MarkdownDescriptor.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Descriptor/MarkdownDescriptor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Descriptor/TextDescriptor.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Descriptor/TextDescriptor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Exceptions/DependencyException.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Exceptions/DependencyException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/ColorHelper.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/ColorHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/Helper.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/Helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/HelperInterface.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/HelperInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/ModesHelper.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/ModesHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/TreeHelper.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Helpers/TreeHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/IO/ArgvInput.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/IO/ArgvInput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/IO/ConsoleOutput.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/IO/ConsoleOutput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/Kernel.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/src/ProvidesSubCommands.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/src/ProvidesSubCommands.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/tests/TemporaryTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/tests/TemporaryTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/console/tests/TestCase.php" afterPath="$PROJECT_DIR$/workbench/laradic/console/tests/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/local.build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/local.build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/src/Sorter.php" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/src/Sorter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/Fixture/SimpleDependable.php" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/Fixture/SimpleDependable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/SorterTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/SorterTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/TestCase.php" afterPath="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/README.md" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/local.build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/local.build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/src/FilesystemServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/src/FilesystemServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/git/LICENSE.md" afterPath="$PROJECT_DIR$/workbench/laradic/git/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/git/README.md" afterPath="$PROJECT_DIR$/workbench/laradic/git/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phing/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/phing/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phing/jenkins.xml" afterPath="$PROJECT_DIR$/workbench/laradic/phing/jenkins.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phing/tool-config/phpdox.xml" afterPath="$PROJECT_DIR$/workbench/laradic/phing/tool-config/phpdox.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phing/tool-config/phpmd.xml" afterPath="$PROJECT_DIR$/workbench/laradic/phing/tool-config/phpmd.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/LICENSE.md" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/README.md" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/docs/index.md" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/docs/index.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/filesystem/phpunit.xml" afterPath="$PROJECT_DIR$/workbench/laradic/filesystem/phpunit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/icon-generator/build.xml" afterPath="$PROJECT_DIR$/workbench/laradic/icon-generator/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/icon-generator/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/icon-generator/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/icon-generator/phpunit.xml" afterPath="$PROJECT_DIR$/workbench/laradic/icon-generator/phpunit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/idea/src/Console/MetaCommand.php" afterPath="$PROJECT_DIR$/workbench/laradic/idea/src/Console/MetaCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/idea/src/IdeaServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/idea/src/IdeaServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/MetaRepository.php" afterPath="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/MetaRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/AutocompleteServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/AutocompleteServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Commands/MetaCommand.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Commands/MetaCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Commands/Seeder.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Commands/Seeder.php" />
@@ -53,54 +132,39 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/BaseMeta.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/BaseMeta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/BindingsMeta.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/BindingsMeta.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/ConfigMeta.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/ConfigMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/CustomMetaInterface.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/CustomMetaInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/CustomMetaTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/CustomMetaTrait.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/MetaInterface.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/MetaInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/RoutesMeta.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/RoutesMeta.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/.gitmodules" afterPath="$PROJECT_DIR$/workbench/laradic/support/.gitmodules" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/README.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/support/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/abstraction/console-provider.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/docs/abstraction/console-provider.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/TransMeta.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/TransMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/StubGenerator.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/StubGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/FileLoader.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/FileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/LoaderInterface.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/LoaderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/TranslationServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/TranslationServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/Translator.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/Translator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Util.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Util.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/tests/IdeaMetaServiceProviderTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/tests/IdeaMetaServiceProviderTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/tests/TestCase.php" afterPath="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/tests/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/README.md" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/phpunit.xml" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/phpunit.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/BaseServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/BaseServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Bindings.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Bindings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Commands.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Commands.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Config.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Events.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Events.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Middleware.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Middleware.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Paths.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Paths.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Providers.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Providers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Resources.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Resources.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/src/ServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/src/ServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/service-provider/tests/ResolvePathsTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/service-provider/tests/ResolvePathsTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/abstraction/service-provider.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/docs/abstraction/service-provider.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/custom-application-paths.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/docs/custom-application-paths.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/filesystem.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/docs/filesystem.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/traits/event-dispatcher.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/docs/traits/event-dispatcher.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/utilities/dotenv.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/docs/utilities/dotenv.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/docs/utilities/path.md" afterPath="$PROJECT_DIR$/workbench/laradic/support/docs/utilities/path.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Arr.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Arr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Byte.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Byte.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Path.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Path.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/ServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/ServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Str.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Str.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/Bootable.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/Bootable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/ConfigTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/ConfigTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/DotArrayObjectTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/DotArrayObjectTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/DotArrayTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/DotArrayTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/EventTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/EventTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/Extendable.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/Extendable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/NamespacedItemResolver.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/NamespacedItemResolver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/NamespacedPackageTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/NamespacedPackageTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/Observable.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/Observable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/PathTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/PathTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/StaticEventTrait.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Traits/StaticEventTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Util.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Util.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/Vendor/Stringy.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/Vendor/Stringy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/src/helpers.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/src/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/ArrTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/tests/ArrTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/Fixture/ServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/tests/Fixture/ServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/Fixture/TestServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/tests/Fixture/TestServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/PathTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/tests/PathTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/ServiceProviderTest.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/tests/ServiceProviderTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/support/tests/TestCase.php" afterPath="$PROJECT_DIR$/workbench/laradic/support/tests/TestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/testing/composer.json" afterPath="$PROJECT_DIR$/workbench/laradic/testing/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/workbench/.gitignore" afterPath="$PROJECT_DIR$/workbench/laradic/workbench/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/.travis.yml" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/composer.json" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/config/blade_extensions.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/config/blade_extensions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/laradic/testing/src/Laravel/AbstractTestCase.php" afterPath="$PROJECT_DIR$/workbench/laradic/testing/src/Laravel/AbstractTestCase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/docs/structure.xml" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/docs/structure.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/BladeExtensionsServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/BladeExtensionsServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Helpers/EmbedStack.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Helpers/EmbedStack.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Helpers/Loop.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Helpers/Loop.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Helpers/Markdown.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Helpers/Markdown.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Providers/BladePreviewServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Providers/BladePreviewServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Providers/BladeServiceProvider.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Providers/BladeServiceProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Renderers/BladeStringRenderer.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Renderers/BladeStringRenderer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/DirectiveRegistry.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/DirectiveRegistry.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/AssignmentDirectives.php" afterPath="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/AssignmentDirectives.php" />
@@ -135,98 +199,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="276">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/README.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="Gfm">
-            <state />
-          </provider>
-          <provider editor-type-id="MarkdownFxHtmlEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LICENSE.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/git/LICENSE.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="46">
-                <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="Gfm">
-            <state />
-          </provider>
-          <provider editor-type-id="MarkdownFxHtmlEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/git/README.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="460">
-                <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-                <folding>
-                  <marker date="1470693024919" expanded="true" signature="1204:1836" ph="..." />
-                  <marker date="1470693024919" expanded="true" signature="1221:1420" ph="..." />
-                  <marker date="1470693024919" expanded="true" signature="1439:1651" ph="..." />
-                  <marker date="1470693024919" expanded="true" signature="1670:1834" ph="..." />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="Gfm">
-            <state />
-          </provider>
-          <provider editor-type-id="MarkdownFxHtmlEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/service-provider/composer.json">
+      <file leaf-file-name="general_foundicons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation/general_foundicons.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="66" />
+            <state relative-caret-position="130">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/service-provider/src/ServiceProvider.php">
+      <file leaf-file-name="Factory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/src/Factory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#41#213#0#PHP" expanded="true" />
+                <element signature="e#553#660#0#PHP" expanded="false" />
+                <element signature="e#767#885#0#PHP" expanded="false" />
+                <element signature="e#1393#1791#0#PHP" expanded="false" />
+                <element signature="e#1452#1712#0#PHP" expanded="false" />
+                <element signature="e#1496#1658#0#PHP" expanded="false" />
+                <element signature="e#1889#2009#0#PHP" expanded="false" />
+                <element signature="e#2085#2161#0#PHP" expanded="false" />
+                <element signature="e#2282#2508#0#PHP" expanded="false" />
+                <element signature="e#2327#2463#0#PHP" expanded="false" />
+                <element signature="e#2623#2768#0#PHP" expanded="false" />
+                <element signature="e#2899#3032#0#PHP" expanded="false" />
+                <element signature="e#3084#3221#0#PHP" expanded="false" />
+                <element signature="e#3283#3846#0#PHP" expanded="false" />
+                <element signature="e#3456#3839#0#PHP" expanded="false" />
+                <element signature="e#3480#3838#2#PHP" expanded="false" />
+                <element signature="e#3679#3784#0#PHP" expanded="false" />
+                <element signature="e#3713#3783#2#PHP" expanded="false" />
+                <element signature="e#3679#3808#0#PHP" expanded="false" />
+                <element signature="e#3912#4674#0#PHP" expanded="false" />
+                <element signature="e#4057#4668#0#PHP" expanded="false" />
+                <element signature="e#4224#4657#0#PHP" expanded="false" />
+                <element signature="e#4248#4656#2#PHP" expanded="false" />
+                <element signature="e#4484#4598#0#PHP" expanded="false" />
+                <element signature="e#4518#4597#2#PHP" expanded="false" />
+                <element signature="e#4484#4622#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="use.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/examples/use.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="social_foundicons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation/social_foundicons.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -235,8 +266,197 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="accessibility_foundicons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation/accessibility_foundicons.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IconGenerator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/src/IconGenerator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="158" column="17" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Font.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/src/Font.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+              <folding>
+                <element signature="e#382#493#0#PHP" expanded="false" />
+                <element signature="e#536#601#0#PHP" expanded="false" />
+                <element signature="e#729#858#0#PHP" expanded="false" />
+                <element signature="e#864#1064#0#PHP" expanded="false" />
+                <element signature="e#908#1026#0#PHP" expanded="false" />
+                <element signature="e#1107#1172#0#PHP" expanded="false" />
+                <element signature="e#1178#1246#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phpunit.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/phpunit.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/service-provider/README.md">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="368">
+                <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="Gfm">
+            <state />
+          </provider>
+          <provider editor-type-id="MarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/helpers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="405" column="13" selection-start-line="405" selection-start-column="13" selection-end-line="405" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phpunit.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/phpunit.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilesystemTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/tests/FilesystemTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/console/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="505">
+                <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+                <folding>
+                  <marker date="1471133046130" expanded="true" signature="4:42" ph="..." />
+                  <marker date="1471133046130" expanded="true" signature="1593:1752" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="Gfm">
+            <state />
+          </provider>
+          <provider editor-type-id="MarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/console/docs/index.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="874">
+                <caret line="38" column="0" selection-start-line="4" selection-start-column="10" selection-end-line="38" selection-end-column="0" />
+                <folding>
+                  <marker date="1470689487937" expanded="true" signature="4:47" ph="..." />
+                  <marker date="1470689487937" expanded="true" signature="915:1074" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="Gfm">
+            <state />
+          </provider>
+          <provider editor-type-id="MarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/dependency-sorter/README.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
@@ -244,38 +464,46 @@
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
                 <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
+                <folding>
+                  <marker date="1470571556000" expanded="true" signature="4:53" ph="..." />
+                  <marker date="1470571556000" expanded="true" signature="1394:1765" ph="..." />
+                  <marker date="1470571556000" expanded="true" signature="1530:1609" ph="..." />
+                  <marker date="1470571556000" expanded="true" signature="1654:1695" ph="..." />
+                  <marker date="1470571556000" expanded="true" signature="1730:1763" ph="..." />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-            <state />
           </provider>
           <provider editor-type-id="Gfm">
             <state />
           </provider>
           <provider editor-type-id="MarkdownFxHtmlEditor">
+            <state />
+          </provider>
+          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
             <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/workbench/README.md">
+        <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/README.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="69">
-                <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                <folding />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <folding>
+                  <marker date="1471127992096" expanded="true" signature="4:49" ph="..." />
+                  <marker date="1471127992096" expanded="true" signature="1003:1074" ph="..." />
+                  <marker date="1471127992096" expanded="true" signature="1725:1796" ph="..." />
+                  <marker date="1471127992096" expanded="true" signature="1910:2254" ph="..." />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-            <state />
           </provider>
           <provider editor-type-id="Gfm">
             <state />
@@ -283,43 +511,23 @@
           <provider editor-type-id="MarkdownFxHtmlEditor">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/support/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="33" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/console/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/workbench/laradic/dependency-sorter/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
+          <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+            <state />
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SW Command" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/workbench/laradic/console" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/workbench/radic/blade-extensions" value="master" />
@@ -342,62 +550,62 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Translation/Translator.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/.phpstorm.meta.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/MetaRepository.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Metas/TransMeta.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/config/phpstorm-autocomplete.php" />
-        <option value="$PROJECT_DIR$/.env.example" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/Translator.php" />
-        <option value="$PROJECT_DIR$/_ide_helper.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/BladeExtensionsServiceProvider.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Provider.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Factory.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/DirectiveConfiguration.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/ForeachDirectives.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/LoopDirectives.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/DebugDirectives.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Traits/BladeExtenderTrait.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/BladeMatchers.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/config.php" />
-        <option value="$PROJECT_DIR$/sites/laradic.dev.conf" />
-        <option value="$USER_HOME$/hosts" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Provider.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/AssignmentDirectives.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/DirectiveRegistry.php" />
-        <option value="$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Factory.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/support/src/Bench.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/support/src/ServiceProvider.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/support/docs/abstraction/console-provider.md" />
-        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/src/Filesystem.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/build.xml" />
-        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/composer.json" />
-        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/src/FilesystemServiceProvider.php" />
-        <option value="$PROJECT_DIR$/workbench/laradic/git/composer.json" />
+        <option value="$PROJECT_DIR$/tail-err.sh" />
+        <option value="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/Fixture/SimpleDependable.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/dependency-sorter/tests/SorterTest.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/MetaRepository.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/idea/src/IdeaServiceProvider.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/config/laradic.custom-provider.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/config/laradic.service-provider.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/Metas/Facades.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/idea/src/Metadata/Metas/Helpers.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/BaseServiceProvider.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Helpers.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/README.md" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/_ServiceProvider.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Events.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Config.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/ServiceProvider.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Middleware.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Bindings.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Commands.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Facades.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Paths.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Resources.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Providers.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/src/Plugins/Mycm.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/testing/src/Laravel/AbstractTestCase.php" />
+        <option value="$PROJECT_DIR$/phpunit.xml" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/phpunit.xml" />
+        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/tests/ResolvePathsTest.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/composer.lock" />
-        <option value="$PROJECT_DIR$/workbench/laradic/assets/README.md" />
-        <option value="$PROJECT_DIR$/workbench/laradic/assets/composer.json" />
-        <option value="$PROJECT_DIR$/workbench/laradic/support/docs/filesystem.md" />
-        <option value="$PROJECT_DIR$/workbench/laradic/console/src/Artisan.php" />
+        <option value="$PROJECT_DIR$/app/Inspire.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/src/FontRepository.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/tests/Test.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/tests/TestCase.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/tests/FactoryTest.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/src/Font.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation-icons/general_foundicons.scss" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/README.md" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/.gitignore" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/download-latest-fonts.sh" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/resources/typicons/config.yml" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/src/use.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/src/IconGenerator.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/src/Factory.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/phpunit.xml" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/build.xml" />
+        <option value="$PROJECT_DIR$/workbench/laradic/icon-generator/composer.json" />
+        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/composer.json" />
+        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/README.md" />
+        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/src/FilesystemServiceProvider.php" />
+        <option value="$PROJECT_DIR$/workbench/laradic/filesystem/phpunit.xml" />
         <option value="$PROJECT_DIR$/workbench/laradic/console/README.md" />
-        <option value="$PROJECT_DIR$/workbench/laradic/support/composer.json" />
-        <option value="$PROJECT_DIR$/workbench/laradic/support/README.md" />
-        <option value="$PROJECT_DIR$/workbench/laradic/git/LICENSE.md" />
-        <option value="$PROJECT_DIR$/workbench/laradic/git/README.md" />
-        <option value="$PROJECT_DIR$/workbench/laradic/service-provider/composer.json" />
-        <option value="$PROJECT_DIR$/workbench/laradic/console/composer.json" />
-        <option value="$PROJECT_DIR$/workbench/laradic/dependency-sorter/composer.json" />
       </list>
     </option>
   </component>
   <component name="Jenkins.Settings">
-    <option name="username" value="radic" />
+    <option name="username" value="admin" />
     <option name="lastSelectedView" value="All" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -505,19 +713,6 @@
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/symfony/class-loader" />
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
-      <path value="$PROJECT_DIR$/vendor/graham-campbell/manager" />
-      <path value="$PROJECT_DIR$/vendor/graham-campbell/github" />
-      <path value="$PROJECT_DIR$/vendor/vierbergenlars/php-semver" />
-      <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
-      <path value="$PROJECT_DIR$/vendor/jacobkiers/oauth" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/potherca/flysystem-github" />
-      <path value="$PROJECT_DIR$/vendor/knplabs/github-api" />
-      <path value="$PROJECT_DIR$/vendor/guzzle/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/gentle/bitbucket-api" />
-      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
     </include_path>
   </component>
@@ -631,11 +826,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -704,12 +894,169 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="service-provider" />
+              <option name="myItemId" value="icon-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dependency-sorter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laradic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Providers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -719,23 +1066,25 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../node/cli" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/workbench/laradic/service-provider/phpunit.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20897436" />
     <property name="editor.config.accepted" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="app.php&#9;FILE&#9;file:///mnt/safe/php/projects/laradic/config/app.php&#10;composer.json&#9;FILE&#9;file:///mnt/safe/php/projects/laradic/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="compos&#9;FILE&#9;file:///mnt/safe/php/projects/laradic/workbench/laradic/service-provider/composer.json&#10;app.php&#9;FILE&#9;file:///mnt/safe/php/projects/laradic/config/app.php&#10;composer.json&#9;FILE&#9;file:///mnt/safe/php/projects/laradic/composer.json" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/workbench/laradic/idea/config" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="Push.Settings">
     <excluded-roots>
@@ -743,19 +1092,35 @@
     </excluded-roots>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/workbench/laradic/workbench" />
-      <recent name="$PROJECT_DIR$/workbench/laradic/service-provider" />
-      <recent name="$PROJECT_DIR$/workbench/laradic/service-provider/src" />
-      <recent name="$PROJECT_DIR$/workbench/laradic/filesystem" />
-      <recent name="$PROJECT_DIR$/workbench/laradic/docs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/workbench/laradic/icon-generator/examples" />
+      <recent name="$PROJECT_DIR$/workbench/laradic/idea/resources/views/metadata" />
       <recent name="$PROJECT_DIR$/workbench/laradic/support/tests" />
       <recent name="$PROJECT_DIR$/workbench/laradic/support/tests/Fixture" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation-icons" />
+      <recent name="$PROJECT_DIR$/workbench/laradic/icon-generator" />
+      <recent name="$PROJECT_DIR$/workbench/laradic/icon-generator/resources/font-awesome@4.4.0" />
+      <recent name="$PROJECT_DIR$/workbench/laradic/icon-generator/resources/font-awesome" />
+      <recent name="$PROJECT_DIR$/workbench/laradic/icon-generator/src" />
+    </key>
   </component>
-  <component name="RunManager" selected="PHP Script.artisan test -vvv">
+  <component name="RunManager" selected="PHPUnit.test laradic/filesystem">
+    <configuration default="false" name="create-mirrored-repo.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create-mirrored-repo.sh" />
+      <option name="PARAMETERS" value="" />
+      <module name="laradic" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="use.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/workbench/laradic/icon-generator/examples/use.php">
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -861,17 +1226,61 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration default="false" name="tail-err" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tail-err.sh" />
+      <option name="PARAMETERS" value="" />
+      <module name="laradic" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="artisan -vvv" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/artisan" scriptParameters="-vvv">
+      <method />
+    </configuration>
+    <configuration default="false" name="idea:meta" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/artisan" scriptParameters="idea:meta -vvv">
       <method />
     </configuration>
     <configuration default="false" name="artisan test -vvv" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/artisan" scriptParameters="test -vvv">
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.artisan -vvv" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Script.artisan test -vvv" />
-      <item index="2" class="java.lang.String" itemvalue="PHPUnit.test radic/blade-extensions" />
+    <configuration default="false" name="test laradic/service-provider" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/workbench/laradic/service-provider/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test laradic/icon-generator" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/workbench/laradic/icon-generator/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test laradic/support" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/workbench/laradic/support/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test laradic/filesystem" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/workbench/laradic/filesystem/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method />
+    </configuration>
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="Bash.tail-err" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.artisan -vvv" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.idea:meta" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.artisan test -vvv" />
+      <item index="4" class="java.lang.String" itemvalue="PHPUnit.test radic/blade-extensions" />
+      <item index="5" class="java.lang.String" itemvalue="PHPUnit.test laradic/service-provider" />
+      <item index="6" class="java.lang.String" itemvalue="PHPUnit.test laradic/icon-generator" />
+      <item index="7" class="java.lang.String" itemvalue="PHPUnit.test laradic/support" />
+      <item index="8" class="java.lang.String" itemvalue="PHPUnit.test laradic/filesystem" />
+      <item index="9" class="java.lang.String" itemvalue="Bash.create-mirrored-repo.sh" />
+      <item index="10" class="java.lang.String" itemvalue="PHP Script.use.php" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.use.php" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.create-mirrored-repo.sh" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -928,7 +1337,20 @@
       <workItem from="1470569007091" duration="2199000" />
       <workItem from="1470571282997" duration="8781000" />
       <workItem from="1470674129780" duration="3224000" />
-      <workItem from="1470691592796" duration="1490000" />
+      <workItem from="1470691592796" duration="4915000" />
+      <workItem from="1470729451103" duration="6997000" />
+      <workItem from="1470738031027" duration="14913000" />
+      <workItem from="1470777382809" duration="15369000" />
+      <workItem from="1470867675955" duration="31770000" />
+      <workItem from="1470932824431" duration="1323000" />
+      <workItem from="1470936859306" duration="43000" />
+      <workItem from="1470936941628" duration="8327000" />
+      <workItem from="1470971098974" duration="3927000" />
+      <workItem from="1470977210190" duration="2195000" />
+      <workItem from="1471000650958" duration="9576000" />
+      <workItem from="1471023388949" duration="3078000" />
+      <workItem from="1471046659012" duration="2690000" />
+      <workItem from="1471062778357" duration="17837000" />
     </task>
     <task id="LOCAL-00001" summary="readme doc update">
       <created>1470483854419</created>
@@ -958,10 +1380,62 @@
       <option name="project" value="LOCAL" />
       <updated>1470565815882</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lotaupdates">
+      <created>1470693820300</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1470693820300</updated>
+    </task>
+    <task id="LOCAL-00006" summary="base implementation working">
+      <created>1470877688217</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1470877688217</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mostly transformed now">
+      <created>1471022524458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1471022524458</updated>
+    </task>
+    <task id="LOCAL-00008" summary="everything works now">
+      <created>1471132273751</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1471132273751</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="test_laradic_filesystem - 2016.08.14 at 01h 58m 35s.xml">
+      <configuration name="test laradic/filesystem" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_laradic_icon-generator - 2016.08.13 at 22h 36m 25s.xml">
+      <configuration name="test laradic/icon-generator" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_laradic_icon-generator - 2016.08.13 at 22h 41m 28s.xml">
+      <configuration name="test laradic/icon-generator" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_laradic_icon-generator - 2016.08.13 at 22h 43m 26s.xml">
+      <configuration name="test laradic/icon-generator" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_laradic_icon-generator - 2016.08.13 at 22h 43m 27s.xml">
+      <configuration name="test laradic/icon-generator" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_laradic_service-provider - 2016.08.13 at 05h 28m 34s.xml">
+      <configuration name="test laradic/service-provider" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_laradic_support - 2016.08.14 at 01h 53m 53s.xml">
+      <configuration name="test laradic/support" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_laradic_support - 2016.08.14 at 01h 58m 13s.xml">
+      <configuration name="test laradic/support" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
     <history-entry file="test_radic_blade-extensions - 2016.08.06 at 21h 20m 27s.xml">
       <configuration name="test radic/blade-extensions" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -970,7 +1444,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59165000" />
+    <option name="totallyTimeSpent" value="180635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1595" y="14" width="3850" height="2123" extended-state="6" />
@@ -978,44 +1452,48 @@
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4490791" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299105" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="Bitbucket Issues" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980865" sideWeight="0.5" order="30" side_tool="false" content_ui="tabs" />
-      <window_info id="Tasks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32598275" sideWeight="0.5" order="19" side_tool="true" content_ui="tabs" x="2004" y="162" width="768" height="490" />
       <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.33013844" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267875" sideWeight="0.4978701" order="21" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20241691" sideWeight="0.5021299" order="24" side_tool="false" content_ui="tabs" />
-      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912058" sideWeight="0.49771166" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299105" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986835" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="3483" y="1057" width="74" height="84" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="25" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980865" sideWeight="0.5" order="31" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15271196" sideWeight="0.49615383" order="7" side_tool="false" content_ui="tabs" x="2516" y="580" width="361" height="382" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3942598" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299105" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Tasks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267875" sideWeight="0.4978701" order="21" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527694" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Unicode Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="32" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37462234" sideWeight="0.5021299" order="24" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912058" sideWeight="0.49771166" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25184405" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="3483" y="1057" width="74" height="84" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32376635" sideWeight="0.49894682" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.3299105" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15271196" sideWeight="0.49615383" order="6" side_tool="false" content_ui="tabs" x="2516" y="580" width="361" height="382" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" x="3483" y="1054" width="74" height="161" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14178303" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Jira Browser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="29" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848838" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282981" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912058" sideWeight="0.50228834" order="18" side_tool="true" content_ui="tabs" x="3786" y="120" width="540" height="709" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23222749" sideWeight="0.50228834" order="18" side_tool="true" content_ui="tabs" x="3786" y="120" width="540" height="709" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.5" order="26" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Navigate" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1028,18 +1506,81 @@
       <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.49155608" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="27" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3942598" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Plugins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20192307" sideWeight="0.11326861" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="28" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27166504" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Bitbucket Issues" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980865" sideWeight="0.5" order="30" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14178303" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="22" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Jira Browser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="29" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Get Gist" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980865" sideWeight="0.5" order="31" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299105" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="Tasks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282981" sideWeight="0.5" order="23" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23222749" sideWeight="0.50228834" order="18" side_tool="true" content_ui="tabs" x="3786" y="120" width="540" height="709" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.5" order="26" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267875" sideWeight="0.4978701" order="21" side_tool="false" content_ui="tabs" />
+      <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="32" side_tool="false" content_ui="tabs" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Jenkins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912058" sideWeight="0.49771166" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="3483" y="1057" width="74" height="84" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Navigate" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.3299105" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" x="3483" y="1054" width="74" height="161" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4490791" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32598275" sideWeight="0.5" order="19" side_tool="true" content_ui="tabs" x="2004" y="162" width="768" height="490" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.33013844" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2087327" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299105" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.49155608" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="25" side_tool="false" content_ui="tabs" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="27" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15271196" sideWeight="0.49615383" order="7" side_tool="false" content_ui="tabs" x="2516" y="580" width="361" height="382" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3942598" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Plugins" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297769" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527694" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20192307" sideWeight="0.11326861" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945737" sideWeight="0.5" order="28" side_tool="false" content_ui="tabs" />
-      <window_info id="Unicode Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Unicode Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20241691" sideWeight="0.5021299" order="24" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27166504" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
-    </layout>
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32376635" sideWeight="0.49894682" order="10" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1080,24 +1621,36 @@
     <MESSAGE value="dev project updates" />
     <MESSAGE value="autocomplete translation base implementation" />
     <MESSAGE value="added blade-extensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added blade-extensions" />
+    <MESSAGE value="lotaupdates" />
+    <MESSAGE value="base implementation working" />
+    <MESSAGE value="mostly transformed now" />
+    <MESSAGE value="everything works now" />
+    <option name="LAST_COMMIT_MESSAGE" value="everything works now" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/workbench/laradic/phpstorm-autocomplete/src/Translation/Translator.php</url>
-          <line>41</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/app/Inspire.php</url>
+          <line>28</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Console/Commands/Inspire.php</url>
-          <line>32</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/workbench/laradic/idea/src/Console/MetaCommand.php</url>
+          <line>24</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/workbench/laradic/icon-generator/tests/FactoryTest.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="31" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="61" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1142,330 +1695,26 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Inspire.php">
+    <entry file="file://$PROJECT_DIR$/create-mirrored-repo.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Application.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="206" column="0" selection-start-line="206" selection-start-column="0" selection-end-line="206" selection-end-column="0" />
-          <folding>
-            <element signature="e#775#850#0#PHP" expanded="false" />
-            <element signature="e#886#974#0#PHP" expanded="false" />
-            <element signature="e#1005#1106#0#PHP" expanded="false" />
-            <element signature="e#1156#1241#0#PHP" expanded="false" />
-            <element signature="e#1278#1353#0#PHP" expanded="false" />
-            <element signature="e#1397#1471#0#PHP" expanded="false" />
-            <element signature="e#1514#1593#0#PHP" expanded="false" />
-            <element signature="e#1641#1725#0#PHP" expanded="false" />
-            <element signature="e#1769#1855#0#PHP" expanded="false" />
-            <element signature="e#1898#1984#0#PHP" expanded="false" />
-            <element signature="e#2028#2124#0#PHP" expanded="false" />
-            <element signature="e#2166#2261#0#PHP" expanded="false" />
-            <element signature="e#2296#2390#0#PHP" expanded="false" />
-            <element signature="e#2424#2522#0#PHP" expanded="false" />
-            <element signature="e#2560#2655#0#PHP" expanded="false" />
-            <element signature="e#2702#2773#0#PHP" expanded="false" />
-            <element signature="e#2812#2941#0#PHP" expanded="false" />
-            <element signature="e#3223#3313#0#PHP" expanded="false" />
-            <element signature="e#3393#3486#0#PHP" expanded="false" />
-            <element signature="e#3693#3782#0#PHP" expanded="false" />
-            <element signature="e#3973#4097#0#PHP" expanded="false" />
-            <element signature="e#4490#4628#0#PHP" expanded="false" />
-            <element signature="e#4837#5003#0#PHP" expanded="false" />
-            <element signature="e#5172#5337#0#PHP" expanded="false" />
-            <element signature="e#5504#5608#0#PHP" expanded="false" />
-            <element signature="e#5711#5829#0#PHP" expanded="false" />
-            <element signature="e#6003#6100#0#PHP" expanded="false" />
-            <element signature="e#6643#6739#0#PHP" expanded="false" />
-            <element signature="e#6842#6936#0#PHP" expanded="false" />
-            <element signature="e#7017#7105#0#PHP" expanded="false" />
-            <element signature="e#7223#7323#0#PHP" expanded="false" />
-            <element signature="e#7435#7522#0#PHP" expanded="false" />
-            <element signature="e#7661#7764#0#PHP" expanded="false" />
-            <element signature="e#7935#8018#0#PHP" expanded="false" />
-            <element signature="e#8158#8249#0#PHP" expanded="false" />
-            <element signature="e#8361#8447#0#PHP" expanded="false" />
-            <element signature="e#8583#8685#0#PHP" expanded="false" />
-            <element signature="e#8853#8948#0#PHP" expanded="false" />
-            <element signature="e#9062#9181#0#PHP" expanded="false" />
-            <element signature="e#9308#9443#0#PHP" expanded="false" />
-            <element signature="e#9571#9669#0#PHP" expanded="false" />
-            <element signature="e#9774#9875#0#PHP" expanded="false" />
-            <element signature="e#10005#10128#0#PHP" expanded="false" />
-            <element signature="e#10536#10631#0#PHP" expanded="false" />
-            <element signature="e#10719#10847#0#PHP" expanded="false" />
-            <element signature="e#11075#11164#0#PHP" expanded="false" />
-            <element signature="e#11262#11347#0#PHP" expanded="false" />
-            <element signature="e#11446#11533#0#PHP" expanded="false" />
-            <element signature="e#11789#12044#0#PHP" expanded="false" />
-            <element signature="e#13362#13571#0#PHP" expanded="false" />
-            <element signature="e#13851#14017#0#PHP" expanded="false" />
-            <element signature="e#14124#14270#0#PHP" expanded="false" />
-            <element signature="e#14510#14610#0#PHP" expanded="false" />
-            <element signature="e#15097#15216#0#PHP" expanded="false" />
-            <element signature="e#15811#15963#0#PHP" expanded="false" />
-            <element signature="e#16618#16818#0#PHP" expanded="false" />
-            <element signature="e#17118#17293#0#PHP" expanded="false" />
-            <element signature="e#17434#17520#0#PHP" expanded="false" />
-            <element signature="e#17599#17686#0#PHP" expanded="false" />
-            <element signature="e#18295#18436#0#PHP" expanded="false" />
-            <element signature="e#18628#18735#0#PHP" expanded="false" />
-            <element signature="e#18839#18950#0#PHP" expanded="false" />
-            <element signature="e#19146#19272#0#PHP" expanded="false" />
-            <element signature="e#19448#19480#0#PHP" expanded="false" />
-            <element signature="e#19696#19804#0#PHP" expanded="false" />
-            <element signature="e#19977#20076#0#PHP" expanded="false" />
-            <element signature="e#20196#20289#0#PHP" expanded="false" />
-            <element signature="e#20408#20501#0#PHP" expanded="false" />
-            <element signature="e#20626#20712#0#PHP" expanded="false" />
-            <element signature="e#20831#20926#0#PHP" expanded="false" />
-            <element signature="e#21048#21141#0#PHP" expanded="false" />
-            <element signature="e#21264#21373#0#PHP" expanded="false" />
-            <element signature="e#21502#21760#0#PHP" expanded="false" />
-            <element signature="e#22007#22142#0#PHP" expanded="false" />
-            <element signature="e#22285#22357#0#PHP" expanded="false" />
-            <element signature="e#22520#22615#0#PHP" expanded="false" />
-            <element signature="e#22713#22800#0#PHP" expanded="false" />
-            <element signature="e#22900#23018#0#PHP" expanded="false" />
-            <element signature="e#23138#23280#0#PHP" expanded="false" />
-            <element signature="e#23438#23569#0#PHP" expanded="false" />
-            <element signature="e#23692#23824#0#PHP" expanded="false" />
-            <element signature="e#23975#24084#0#PHP" expanded="false" />
-            <element signature="e#24201#24307#0#PHP" expanded="false" />
-            <element signature="e#24413#24496#0#PHP" expanded="false" />
-            <element signature="e#24597#24709#0#PHP" expanded="false" />
-            <element signature="e#24930#25059#0#PHP" expanded="false" />
-            <element signature="e#25161#25256#0#PHP" expanded="false" />
-            <element signature="e#29261#29366#0#PHP" expanded="false" />
-            <element signature="e#29475#29593#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../codex/artisan">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/DirectiveRegistry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4968">
-          <caret line="324" column="35" selection-start-line="324" selection-start-column="35" selection-end-line="324" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Directives/AssignmentDirectives.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/radic/blade-extensions/src/Seven/Factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/src/Bench.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3244">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/docs/abstraction/console-provider.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="322">
-            <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/Temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/config/laradic.filesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/FilesystemServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/Filesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="e#6#140#0#PHP" expanded="true" />
-            <element signature="e#3756#4723#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/LocalFilesystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1473">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/git/src/Contracts/Manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/git/src/Manager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#756#863#0#PHP" expanded="false" />
-            <element signature="e#957#1051#0#PHP" expanded="false" />
-            <element signature="e#1157#1277#0#PHP" expanded="false" />
-            <element signature="e#1667#1770#0#PHP" expanded="false" />
-            <element signature="e#2074#2178#0#PHP" expanded="false" />
-            <element signature="e#2445#2548#0#PHP" expanded="false" />
-            <element signature="e#2671#2761#0#PHP" expanded="false" />
-            <element signature="e#2877#2947#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Console/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artisan">
+    <entry file="file://$USER_HOME$/bin/git-mirrored-create-repos">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <element signature="e#26#481#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/git/src/GitServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#255#460#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1495">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/git/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72381">
-          <caret line="3147" column="21" selection-start-line="3147" selection-start-column="21" selection-end-line="3147" selection-end-column="21" />
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1476,15 +1725,12 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="69">
-            <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+          <first_editor relative-caret-position="506">
+            <caret line="22" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
       </provider>
       <provider editor-type-id="Gfm">
         <state />
@@ -1492,200 +1738,371 @@
       <provider editor-type-id="MarkdownFxHtmlEditor">
         <state />
       </provider>
+      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/assets/composer.json">
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/download-latest-fonts.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="276">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/docs/ExampleServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/.tmp/typicons/.gitmodules">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2151">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/.tmp/typicons/support/process/process.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/.tmp/typicons/support/process/meta.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/.tmp/typicons/DEVELOPMENT.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="575">
+            <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/.tmp/typicons/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/.tmp/typicons/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="1702" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-brush-32x32-42A5F5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-anchor-32x32-424242.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-calendar-32x32-424242.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/fa-android-16x16-42A5F5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/fa-android-32x32-42A5F5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/fa-android-32x32-ef5350.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/fa-android-64x64-42A5F5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/fa-github-16x16-42A5F5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-calendar-64x64-42A5F5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-calendar-128x128-42A5F5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-cancel-16x16-ef5350.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation/social_foundicons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation/accessibility_foundicons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/resources/foundation/general_foundicons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/resources/typicons/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6268">
+          <caret line="1694" column="14" selection-start-line="1694" selection-start-column="11" selection-end-line="1694" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-calendar-64x64-ef5350.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-calendar-128x128-ef5350.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-cancel-32x32-ef5350.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/generated/ti-brush-32x32-ef5350.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/examples/use.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/src/Font.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="e#382#493#0#PHP" expanded="false" />
+            <element signature="e#536#601#0#PHP" expanded="false" />
+            <element signature="e#729#858#0#PHP" expanded="false" />
+            <element signature="e#864#1064#0#PHP" expanded="false" />
+            <element signature="e#908#1026#0#PHP" expanded="false" />
+            <element signature="e#1107#1172#0#PHP" expanded="false" />
+            <element signature="e#1178#1246#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/src/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#41#213#0#PHP" expanded="true" />
+            <element signature="e#553#660#0#PHP" expanded="false" />
+            <element signature="e#767#885#0#PHP" expanded="false" />
+            <element signature="e#1393#1791#0#PHP" expanded="false" />
+            <element signature="e#1452#1712#0#PHP" expanded="false" />
+            <element signature="e#1496#1658#0#PHP" expanded="false" />
+            <element signature="e#1889#2009#0#PHP" expanded="false" />
+            <element signature="e#2085#2161#0#PHP" expanded="false" />
+            <element signature="e#2282#2508#0#PHP" expanded="false" />
+            <element signature="e#2327#2463#0#PHP" expanded="false" />
+            <element signature="e#2623#2768#0#PHP" expanded="false" />
+            <element signature="e#2899#3032#0#PHP" expanded="false" />
+            <element signature="e#3084#3221#0#PHP" expanded="false" />
+            <element signature="e#3283#3846#0#PHP" expanded="false" />
+            <element signature="e#3456#3839#0#PHP" expanded="false" />
+            <element signature="e#3480#3838#2#PHP" expanded="false" />
+            <element signature="e#3679#3784#0#PHP" expanded="false" />
+            <element signature="e#3713#3783#2#PHP" expanded="false" />
+            <element signature="e#3679#3808#0#PHP" expanded="false" />
+            <element signature="e#3912#4674#0#PHP" expanded="false" />
+            <element signature="e#4057#4668#0#PHP" expanded="false" />
+            <element signature="e#4224#4657#0#PHP" expanded="false" />
+            <element signature="e#4248#4656#2#PHP" expanded="false" />
+            <element signature="e#4484#4598#0#PHP" expanded="false" />
+            <element signature="e#4518#4597#2#PHP" expanded="false" />
+            <element signature="e#4484#4622#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/tests/Fixture/TestServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/workbench/laradic/support/src/ServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="e#6#140#0#PHP" expanded="false" />
-            <element signature="e#422#776#0#PHP" expanded="false" />
-            <element signature="e#1009#1176#0#PHP" expanded="false" />
-            <element signature="e#1212#1320#0#PHP" expanded="false" />
-            <element signature="e#1346#1446#0#PHP" expanded="false" />
-            <element signature="e#1802#1900#0#PHP" expanded="false" />
-            <element signature="e#1968#2061#0#PHP" expanded="false" />
-            <element signature="e#2322#2411#0#PHP" expanded="false" />
-            <element signature="e#2510#2599#0#PHP" expanded="false" />
-            <element signature="e#2661#2800#0#PHP" expanded="false" />
-            <element signature="e#3069#3160#0#PHP" expanded="false" />
-            <element signature="e#3234#3331#0#PHP" expanded="false" />
-            <element signature="e#3394#3534#0#PHP" expanded="false" />
-            <element signature="e#3811#3889#0#PHP" expanded="false" />
-            <element signature="e#3929#4035#0#PHP" expanded="false" />
-            <element signature="e#4339#4460#0#PHP" expanded="false" />
-            <element signature="e#4537#4654#0#PHP" expanded="false" />
-            <element signature="e#4722#4827#0#PHP" expanded="false" />
-            <element signature="e#4875#4998#0#PHP" expanded="false" />
-            <element signature="e#5052#5180#0#PHP" expanded="false" />
-            <element signature="e#5447#5595#0#PHP" expanded="false" />
-            <element signature="e#5633#5809#0#PHP" expanded="false" />
-            <element signature="e#5855#6044#0#PHP" expanded="false" />
-            <element signature="e#6171#6280#0#PHP" expanded="false" />
-            <element signature="e#6317#6407#0#PHP" expanded="false" />
-            <element signature="e#6446#6610#0#PHP" expanded="false" />
-            <element signature="e#6644#6803#0#PHP" expanded="false" />
-            <element signature="e#6838#6968#0#PHP" expanded="false" />
-            <element signature="e#7006#7072#0#PHP" expanded="false" />
-            <element signature="e#7108#7177#0#PHP" expanded="false" />
-            <element signature="e#7216#7293#0#PHP" expanded="false" />
-            <element signature="e#7339#7414#0#PHP" expanded="false" />
-            <element signature="e#7458#7532#0#PHP" expanded="false" />
-            <element signature="e#7569#7700#0#PHP" expanded="false" />
-            <element signature="e#7737#7853#0#PHP" expanded="false" />
-            <element signature="e#7902#7981#0#PHP" expanded="false" />
-            <element signature="e#8022#8168#0#PHP" expanded="false" />
-            <element signature="e#8220#8281#0#PHP" expanded="false" />
-            <element signature="e#8371#8400#0#PHP" expanded="false" />
-            <element signature="e#8474#8701#0#PHP" expanded="false" />
-            <element signature="e#8773#8906#0#PHP" expanded="false" />
-            <element signature="e#8954#9096#0#PHP" expanded="false" />
-            <element signature="e#9142#9233#0#PHP" expanded="false" />
-            <element signature="e#9267#9346#0#PHP" expanded="false" />
-            <element signature="e#9583#9758#0#PHP" expanded="false" />
-            <element signature="e#11516#11662#0#PHP" expanded="false" />
-            <element signature="e#12485#12625#0#PHP" expanded="false" />
-            <element signature="e#16648#16794#0#PHP" expanded="false" />
-            <element signature="e#17028#17159#0#PHP" expanded="false" />
-            <element signature="e#17750#17816#0#PHP" expanded="false" />
-            <element signature="e#18063#18134#0#PHP" expanded="false" />
-            <element signature="e#19100#19180#0#PHP" expanded="false" />
-            <element signature="e#19341#19525#0#PHP" expanded="false" />
-            <element signature="e#20163#20276#0#PHP" expanded="false" />
-            <element signature="e#20550#20655#0#PHP" expanded="false" />
-            <element signature="e#20781#20898#0#PHP" expanded="false" />
-            <element signature="e#20994#21168#0#PHP" expanded="false" />
-            <element signature="e#21442#21711#0#PHP" expanded="false" />
-            <element signature="e#22194#22483#0#PHP" expanded="false" />
-            <element signature="e#22759#22963#0#PHP" expanded="false" />
-            <element signature="e#23429#23473#0#PHP" expanded="false" />
-            <element signature="e#24544#24703#0#PHP" expanded="false" />
-            <element signature="e#25085#25157#0#PHP" expanded="false" />
-            <element signature="e#26239#26339#0#PHP" expanded="false" />
-            <element signature="e#26524#26654#0#PHP" expanded="false" />
-            <element signature="e#27503#27606#0#PHP" expanded="false" />
-            <element signature="e#28142#28231#0#PHP" expanded="false" />
-            <element signature="e#29018#29093#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/docs/dependency-sorting.md" />
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/docs/filesystem.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-            <folding>
-              <marker date="1470691203897" expanded="true" signature="4:80" ph="..." />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownFxHtmlEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/console/src/Artisan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1069">
-          <caret line="118" column="41" selection-start-line="118" selection-start-column="41" selection-end-line="118" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/console/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="69">
-            <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/src/IconGenerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="158" column="17" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
+          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownFxHtmlEditor">
-        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/LICENSE.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownFxHtmlEditor">
-        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/README.md">
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/config/laradic.filesystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/FilesystemServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/src/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="405" column="13" selection-start-line="405" selection-start-column="13" selection-end-line="405" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/tests/FilesystemTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="529">
-            <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <first_editor relative-caret-position="368">
+            <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
       <provider editor-type-id="Gfm">
         <state />
       </provider>
       <provider editor-type-id="MarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
         <state />
       </provider>
     </entry>
@@ -1708,136 +2125,59 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
       <provider editor-type-id="Gfm">
         <state />
       </provider>
       <provider editor-type-id="MarkdownFxHtmlEditor">
         <state />
       </provider>
+      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/docs/README.md">
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/icon-generator/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownFxHtmlEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/filesystem/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownFxHtmlEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/git/LICENSE.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-      <provider editor-type-id="MarkdownFxHtmlEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/git/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="460">
-            <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
             <folding>
-              <marker date="1470693024919" expanded="true" signature="1204:1836" ph="..." />
-              <marker date="1470693024919" expanded="true" signature="1221:1420" ph="..." />
-              <marker date="1470693024919" expanded="true" signature="1439:1651" ph="..." />
-              <marker date="1470693024919" expanded="true" signature="1670:1834" ph="..." />
+              <marker date="1471127992096" expanded="true" signature="4:49" ph="..." />
+              <marker date="1471127992096" expanded="true" signature="1003:1074" ph="..." />
+              <marker date="1471127992096" expanded="true" signature="1725:1796" ph="..." />
+              <marker date="1471127992096" expanded="true" signature="1910:2254" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
-      </provider>
       <provider editor-type-id="Gfm">
         <state />
       </provider>
       <provider editor-type-id="MarkdownFxHtmlEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/service-provider/src/ServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/service-provider/README.md">
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/console/docs/index.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
+          <first_editor relative-caret-position="874">
+            <caret line="38" column="0" selection-start-line="4" selection-start-column="10" selection-end-line="38" selection-end-column="0" />
+            <folding>
+              <marker date="1470689487937" expanded="true" signature="4:47" ph="..." />
+              <marker date="1470689487937" expanded="true" signature="915:1074" ph="..." />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
       </provider>
       <provider editor-type-id="Gfm">
         <state />
@@ -1845,22 +2185,25 @@
       <provider editor-type-id="MarkdownFxHtmlEditor">
         <state />
       </provider>
+      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/workbench/README.md">
+    <entry file="file://$PROJECT_DIR$/workbench/laradic/console/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="69">
-            <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
+          <first_editor relative-caret-position="505">
+            <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            <folding>
+              <marker date="1471133046130" expanded="true" signature="4:42" ph="..." />
+              <marker date="1471133046130" expanded="true" signature="1593:1752" ph="..." />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
-        <state />
       </provider>
       <provider editor-type-id="Gfm">
         <state />
@@ -1868,37 +2211,8 @@
       <provider editor-type-id="MarkdownFxHtmlEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/support/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/service-provider/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/console/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/laradic/dependency-sorter/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
+      <provider editor-type-id="MarkdownFxUnmodifiedHtmlEditor">
+        <state />
       </provider>
     </entry>
   </component>
@@ -1971,6 +2285,7 @@
             <option name="proportions">
               <list>
                 <option value="0.20897436" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

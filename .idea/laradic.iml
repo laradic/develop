@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file:///production/laradic" />
+    <output-test url="file:///test/laradic" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/support/src" isTestSource="false" packagePrefix="Laradic\Support" />
@@ -20,7 +22,25 @@
       <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/filesystem/tests" isTestSource="true" packagePrefix="Laradic\Tests\Filesystem" />
       <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/git/config" type="java-resource" relativeOutputPath="config" />
       <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/git/src" isTestSource="false" packagePrefix="Laradic\Git" />
-      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/git/tests" isTestSource="false" packagePrefix="Laradic\Tests\Git" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/assets/config" type="java-resource" relativeOutputPath="config" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/console/config" type="java-resource" relativeOutputPath="config" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/idea/config" type="java-resource" relativeOutputPath="config" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/service-provider/config" type="java-resource" relativeOutputPath="config" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/assets/src" isTestSource="false" packagePrefix="Laradic\Assets" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/console/src" isTestSource="false" packagePrefix="Laradic\Console" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/dependency-sorter/src" isTestSource="false" packagePrefix="Laradic\Dependencies" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/idea/src" isTestSource="false" packagePrefix="Laradic\Idea" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/service-provider/src" isTestSource="false" packagePrefix="Laradic\ServiceProvider" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/service-provider/tests" isTestSource="true" packagePrefix="Laradic\Tests\ServiceProvider" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/idea/tests" isTestSource="true" packagePrefix="Laradic\Tests\Idea" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/git/tests" isTestSource="true" packagePrefix="Laradic\Tests\Git" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/dependency-sorter/tests" isTestSource="true" packagePrefix="Laradic\Tests\Dependencies" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/console/tests" isTestSource="true" packagePrefix="Laradic\Tests\Console" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/assets/tests" isTestSource="true" packagePrefix="Laradic\Tests\Assets" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/icon-generator/config" type="java-resource" relativeOutputPath="config" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/idea/resources/views" type="java-resource" relativeOutputPath="views/laradic-idea" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/icon-generator/src" isTestSource="false" packagePrefix="Laradic\IconGenerator" />
+      <sourceFolder url="file://$MODULE_DIR$/workbench/laradic/icon-generator/tests" isTestSource="true" packagePrefix="Laradic\Tests\IconGenerator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/anahkiasen/underscore-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/apache/log4php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/barryvdh/laravel-ide-helper" />
@@ -40,20 +60,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/gabrielelana/byte-units" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/gentle/bitbucket-api" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/graham-campbell/github" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/graham-campbell/manager" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/jacobkiers/oauth" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/knplabs/github-api" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/kriswallsmith/buzz" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/matthiasmullie/minify" />
@@ -81,9 +91,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/potherca/flysystem-github" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/predis/predis" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psy/psysh" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
@@ -115,12 +123,12 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/vierbergenlars/php-semver" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/wikimedia/composer-merge-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/workbench/laradic/icon-generator/.tmp" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="PHP">
@@ -143,20 +151,10 @@
           <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/gabrielelana/byte-units" />
-          <root url="file://$MODULE_DIR$/vendor/gentle/bitbucket-api" />
-          <root url="file://$MODULE_DIR$/vendor/graham-campbell/github" />
-          <root url="file://$MODULE_DIR$/vendor/graham-campbell/manager" />
-          <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
-          <root url="file://$MODULE_DIR$/vendor/jacobkiers/oauth" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
-          <root url="file://$MODULE_DIR$/vendor/knplabs/github-api" />
-          <root url="file://$MODULE_DIR$/vendor/kriswallsmith/buzz" />
           <root url="file://$MODULE_DIR$/vendor/laravel/framework" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
           <root url="file://$MODULE_DIR$/vendor/matthiasmullie/minify" />
@@ -184,9 +182,7 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-          <root url="file://$MODULE_DIR$/vendor/potherca/flysystem-github" />
           <root url="file://$MODULE_DIR$/vendor/predis/predis" />
-          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/psy/psysh" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
@@ -218,7 +214,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
-          <root url="file://$MODULE_DIR$/vendor/vierbergenlars/php-semver" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/wikimedia/composer-merge-plugin" />
@@ -243,20 +238,10 @@
           <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/gabrielelana/byte-units" />
-          <root url="file://$MODULE_DIR$/vendor/gentle/bitbucket-api" />
-          <root url="file://$MODULE_DIR$/vendor/graham-campbell/github" />
-          <root url="file://$MODULE_DIR$/vendor/graham-campbell/manager" />
-          <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
-          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
-          <root url="file://$MODULE_DIR$/vendor/jacobkiers/oauth" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color" />
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
-          <root url="file://$MODULE_DIR$/vendor/knplabs/github-api" />
-          <root url="file://$MODULE_DIR$/vendor/kriswallsmith/buzz" />
           <root url="file://$MODULE_DIR$/vendor/laravel/framework" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
           <root url="file://$MODULE_DIR$/vendor/matthiasmullie/minify" />
@@ -284,9 +269,7 @@
           <root url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
           <root url="file://$MODULE_DIR$/vendor/phpunit/phpunit-mock-objects" />
-          <root url="file://$MODULE_DIR$/vendor/potherca/flysystem-github" />
           <root url="file://$MODULE_DIR$/vendor/predis/predis" />
-          <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
           <root url="file://$MODULE_DIR$/vendor/psr/log" />
           <root url="file://$MODULE_DIR$/vendor/psy/psysh" />
           <root url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
@@ -318,7 +301,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
-          <root url="file://$MODULE_DIR$/vendor/vierbergenlars/php-semver" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/wikimedia/composer-merge-plugin" />

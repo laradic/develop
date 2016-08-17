@@ -1,8 +1,6 @@
 <?php
 
 namespace App;
-
-use Codex\Support\IconGenerator;
 use Illuminate\Console\Command;
 
 class Inspire extends Command
@@ -23,8 +21,8 @@ class Inspire extends Command
 
     public function handle()
     {
-        $ig = new IconGenerator();
-        $ig->set
+
+
 
         $a = 'a';
     }

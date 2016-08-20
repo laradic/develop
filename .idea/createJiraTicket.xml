@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CreateJiraTicketConfiguration">
+    <option name="commentRules">
+      <list>
+        <CommentRule>
+          <option name="commentExpression" value="^// TODO (.*)$" />
+          <option name="commentTemplate" value="// TODO {Key} {Summary}" />
+          <option name="jiraIssueType" value="Task" />
+          <option name="jiraLabels" value="" />
+          <option name="jiraSummaryTemplate" value="$1" />
+          <option name="name" value="New Rule" />
+        </CommentRule>
+      </list>
+    </option>
     <option name="jiraUrl" value="https://projects.radic.nl" />
     <option name="password" value="1234vijf" />
     <option name="project" value="LARADIC" />

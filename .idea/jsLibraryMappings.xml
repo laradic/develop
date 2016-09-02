@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{laradic/node_modules}" />
     <file url="file://$PROJECT_DIR$/.tmp/typicons.font/support/process" libraries="{laradic/.tmp/typicons.font/support/process/node_modules}" />
   </component>
 </project>

@@ -1,0 +1,15 @@
+{
+    "name": "radical/framework",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Radical\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Radical\\Tests": "tests"
+        }
+    }
+}

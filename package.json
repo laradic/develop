@@ -8,5 +8,9 @@
     "gulp": "^3.9.1",
     "laravel-elixir": "^5.0.0",
     "bootstrap-sass": "^3.3.0"
+  },
+    "dependencies": {
+        "@types/marked": "0.0.27",
+        "marked": "^0.3.6"
   }
 }

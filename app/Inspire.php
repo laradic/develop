@@ -1,7 +1,10 @@
 <?php
 
 namespace App;
+
 use Illuminate\Console\Command;
+use Laradic\Idea\Configuration\Factory;
+
 
 class Inspire extends Command
 {
@@ -14,19 +17,20 @@ class Inspire extends Command
 
     /**
      * The console command description.
+     *33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
      *
-     * @var string
+*@var string
      */
     protected $description = '';
 
     public function handle()
     {
-
+        $f = new Factory();
+        $f->build();
 
 
         $a = 'a';
     }
-
 
     public function handle2()
     {

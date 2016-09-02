@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Console\Command;
 use Laradic\Idea\Configuration\Factory;
+use Laradic\Workbench\Workbench;
 
 
 class Inspire extends Command
@@ -24,6 +25,13 @@ class Inspire extends Command
     protected $description = '';
 
     public function handle()
+    {
+        $wb = new Workbench();
+//        $wb->getWorkbenchPackages()->filter()
+    }
+
+
+    public function handle3()
     {
         $f = new Factory();
         $f->build();

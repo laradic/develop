@@ -40,8 +40,11 @@
             <div class="content">
                 <div class="title">Laravel 5</div>
                 @set($a, 'asd')
-                @set($a, 'asd')
-                @set($a, 'asd')
+                @set($b, 'asd b')
+                @set($c, 'asd c')
+                $a: {!! $a !!}<br>
+                $b: {!! $b !!}<br>
+                $c: {!! $c !!}<br>
             </div>
         </div>
     </body>

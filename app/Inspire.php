@@ -4,7 +4,6 @@ namespace App;
 
 use Illuminate\Console\Command;
 use Laradic\Idea\Configuration\Factory;
-use Laradic\Workbench\Workbench;
 
 
 class Inspire extends Command
@@ -20,14 +19,15 @@ class Inspire extends Command
      * The console command description.
      *33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
      *
-*@var string
+     * @var string
      */
     protected $description = '';
 
     public function handle()
     {
-        $wb = new Workbench();
-//        $wb->getWorkbenchPackages()->filter()
+        $b = app('blade-extensions');
+        $b->addDirectives(config('blade-extensions.directives', []));
+
     }
 
 

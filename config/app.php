@@ -160,7 +160,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
 
-        #Radic\BladeExtensions\Seven\Provider::class,
+        Radic\BladeExtensions\Seven\Provider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
         \Laradic\Idea\IdeaServiceProvider::class,

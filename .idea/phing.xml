@@ -3,6 +3,8 @@
   <component name="PhingConfiguration">
     <buildFilePaths>
       <buildFile path="file://$PROJECT_DIR$/workbench/radic/blade-extensions/build.xml" />
+      <buildFile path="file://$PROJECT_DIR$/workbench/laradic/support/build.xml" />
     </buildFilePaths>
+    <phingPath>/usr/local/bin/phing</phingPath>
   </component>
 </project>

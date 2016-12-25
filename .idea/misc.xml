@@ -5,18 +5,11 @@
     <option name="id" value="1453043409437" />
     <option name="name" value="default" />
   </component>
-  <component name="IdProvider" IDEtalkID="BE8DF1FE03632DDA4090856900F9AA96" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" />
+  <component name="IdProvider" IDEtalkID="BE8DF1FE03632DDA4090856900F9AA96" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" />
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />

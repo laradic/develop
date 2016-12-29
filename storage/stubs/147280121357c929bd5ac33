@@ -1,0 +1,8 @@
+<?php $__currentLoopData = $methods; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $method): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+    <?php echo $method; ?> => [
+        '' == '@',
+        <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $k => $v): $__env->incrementLoopIndices(); $loop = $__env->getFirstLoop(); ?>
+            '<?php echo $k; ?>' instanceof <?php echo \Laradic\Support\Str::ensureLeft(is_string($v) && class_exists($v, false) ? $v : 'null', '\\'); ?>,
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>
+    ],
+<?php endforeach; $__env->popLoop(); $loop = $__env->getFirstLoop(); ?>

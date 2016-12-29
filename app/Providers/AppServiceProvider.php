@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Laradic\Filesystem\Filesystem;
+use Laradic\Idea\Metadata\Metas\BindingsMeta;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+//        config()->set('laradic.idea.meta.metas', array_except(config('laradic.idea.meta.metas', []), ['translations']));
     }
 
     /**
@@ -23,6 +26,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Filesystem::create()->delete(globule(storage_path('framework/views/*.php')));
     }
 }

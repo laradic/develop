@@ -9,6 +9,7 @@
     </inspection_tool>
     <inspection_tool class="MissingClassSpec" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PropertyCanBeStaticInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SecurityAdvisoriesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SlowArrayOperationsInLoopInspection" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>

@@ -1,4 +1,14 @@
 <?php
+/**
+ * Part of the Laradic PHP Packages.
+ *
+ * Copyright (c) 2017. Robin Radic.
+ *
+ * The license can be found in the package and online at https://laradic.mit-license.org.
+ *
+ * @copyright Copyright 2017 (c) Robin Radic
+ * @license https://laradic.mit-license.org The MIT License
+ */
 
 namespace App\Providers;
 
@@ -51,7 +61,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
-        Route::group([
+        \Route::group([
             'middleware' => 'web',
             'namespace'  => $this->namespace,
         ], function ($router) {
@@ -68,7 +78,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::group([
+        \Route::group([
             'middleware' => 'api',
             'namespace'  => $this->namespace,
             'prefix'     => 'api',

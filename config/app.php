@@ -154,20 +154,20 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
+//        App\Providers\AppServiceProvider::class,
+//        App\Providers\AuthServiceProvider::class,
+//        App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
+//        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
 
         #Radic\BladeExtensions\Seven\Provider::class,
         \Radic\BladeExtensions\BladeExtensionsServiceProvider::class,
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+//        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
         \Laradic\Idea\IdeaServiceProvider::class,
-        \Laradic\Console\ConsoleServiceProvider::class,
-        \Laradic\IconGenerator\Laravel\IconGeneratorServiceProvider::class,
+//        \Laradic\Console\ConsoleServiceProvider::class,
+//        \Laradic\IconGenerator\Laravel\IconGeneratorServiceProvider::class,
 
     ],
 

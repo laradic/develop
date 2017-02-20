@@ -5,16 +5,8 @@
     <option name="id" value="1453043409437" />
     <option name="name" value="default" />
   </component>
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
   <component name="IdProvider" IDEtalkID="BE8DF1FE03632DDA4090856900F9AA96" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" />
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings />
-    </option>
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
   <component name="TaskProjectConfiguration">
     <server type="JIRA" url="https://projects.radic.nl" />
   </component>

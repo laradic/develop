@@ -14,32 +14,33 @@
         <option name="AUTOLINKS" value="true" />
         <option name="DEFINITIONS" value="false" />
         <option name="FENCED_CODE_BLOCKS" value="true" />
-        <option name="FOOTNOTES" value="false" />
-        <option name="FORCELISTITEMPARA" value="false" />
+        <option name="FOOTNOTES" value="true" />
         <option name="HARDWRAPS" value="false" />
+        <option name="INSERTED" value="false" />
         <option name="QUOTES" value="false" />
         <option name="RELAXEDHRULES" value="true" />
         <option name="SMARTS" value="false" />
         <option name="STRIKETHROUGH" value="true" />
+        <option name="SUBSCRIPT" value="false" />
+        <option name="SUPERSCRIPT" value="false" />
         <option name="SUPPRESS_HTML_BLOCKS" value="false" />
         <option name="SUPPRESS_INLINE_HTML" value="false" />
-        <option name="TABLES" value="false" />
-        <option name="TASKLISTITEMS" value="false" />
+        <option name="TABLES" value="true" />
+        <option name="TASKLISTITEMS" value="true" />
         <option name="TOC" value="true" />
-        <option name="TRACE_PARSER" value="false" />
-        <option name="WIKILINKS" value="false" />
+        <option name="WIKILINKS" value="true" />
       </PegdownExtensions>
       <ParserOptions>
-        <option name="COMMONMARK_LISTS" value="true" />
+        <option name="COMMONMARK_LISTS" value="false" />
         <option name="DUMMY" value="false" />
-        <option name="EMOJI_SHORTCUTS" value="false" />
+        <option name="EMOJI_SHORTCUTS" value="true" />
         <option name="FLEXMARK_FRONT_MATTER" value="false" />
-        <option name="GFM_TABLE_RENDERING" value="false" />
-        <option name="GITBOOK_URL_ENCODING" value="false" />
+        <option name="GFM_TABLE_RENDERING" value="true" />
+        <option name="GITBOOK_URL_ENCODING" value="true" />
         <option name="GITHUB_EMOJI_URL" value="false" />
-        <option name="GITHUB_LISTS" value="false" />
+        <option name="GITHUB_LISTS" value="true" />
         <option name="GITHUB_WIKI_LINKS" value="false" />
-        <option name="JEKYLL_FRONT_MATTER" value="false" />
+        <option name="JEKYLL_FRONT_MATTER" value="true" />
         <option name="SIM_TOC_BLANK_LINE_SPACER" value="false" />
       </ParserOptions>
     </ParserSettings>
@@ -153,7 +154,11 @@
       <StylesheetProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.text.html.css" providerName="No Stylesheet" />
       </StylesheetProvider>
-      <ScriptProviders />
+      <ScriptProviders>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.github-collapse-in-comment.html.script" providerName="Details tag opener" />
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.prismjs.html.script" providerName="Prism.js Script" />
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.github-collapse-markdown.html.script" providerName="GitHub Collapse Markdown" />
+      </ScriptProviders>
       <cssText>article &gt; .container {
 width: 100% !important;
 max-width: 100% !important;
@@ -168,7 +173,7 @@ max-width: 100% !important;
 display:none !important;
 }</cssText>
     </CssSettings>
-    <HtmlExportSettings updateOnSave="false" parentDir="$ProjectFileDir$" targetDir="$ProjectFileDir$" cssDir="" scriptDir="" plainHtml="false" imageDir="" copyLinkedImages="false" imageUniquifyType="0" targetExt="" useTargetExt="false" noCssNoScripts="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" />
+    <HtmlExportSettings updateOnSave="false" parentDir="$ProjectFileDir$" targetDir="$ProjectFileDir$" cssDir="$ProjectFileDir$/css" scriptDir="$ProjectFileDir$/js" plainHtml="false" imageDir="$ProjectFileDir$/img" copyLinkedImages="false" imageUniquifyType="0" targetExt="" useTargetExt="false" noCssNoScripts="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" />
     <LinkMapSettings>
       <textMaps />
     </LinkMapSettings>

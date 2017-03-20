@@ -4,6 +4,9 @@
     <inspection_tool class="ArrayTypeOfParameterByDefaultValueInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="ClassConstantCanBeUsedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="ClassOverridesFieldOfSuperClassInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="InheritDocInspection" enabled="true" level="WEAK WARNING" enabled_by_default="false">
+      <scope name="workbench packages src php" level="WEAK WARNING" enabled="false" />
+    </inspection_tool>
     <inspection_tool class="LoggerInitializedWithForeignClass" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
       <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
@@ -15,14 +18,33 @@
       <option name="NAMING" value="true" />
     </inspection_tool>
     <inspection_tool class="MissingClassSpec" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MissingInheritDocInspection" enabled="true" level="WEAK WARNING" enabled_by_default="false">
+      <scope name="workbench packages src php" level="WEAK WARNING" enabled="true" />
+    </inspection_tool>
     <inspection_tool class="MoreThanThreeArgumentsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PhpCSValidationInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="CODING_STANDARD" value="Custom" />
       <option name="CUSTOM_RULESET_PATH" value="$PROJECT_DIR$/ruleset.xml" />
+      <option name="SHOW_SNIFF_NAMES" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PhpDocMissingReturnTagInspection" enabled="true" level="WEAK WARNING" enabled_by_default="false">
+      <scope name="workbench packages src php" level="WEAK WARNING" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PhpDocMissingThrowsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="false">
+      <scope name="workbench packages src php" level="WEAK WARNING" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="PhpDocSignatureInspection" enabled="true" level="WEAK WARNING" enabled_by_default="false">
+      <scope name="workbench packages src php" level="WEAK WARNING" enabled="true" />
     </inspection_tool>
     <inspection_tool class="PhpLintInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PhpMissingDocCommentInspection" enabled="true" level="WARNING" enabled_by_default="false">
+      <scope name="workbench packages src php" level="WARNING" enabled="true" />
+    </inspection_tool>
     <inspection_tool class="PropertyCanBeStaticInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SecurityAdvisoriesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SlowArrayOperationsInLoopInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UnterminatedStatementJS" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoreSemicolonAtEndOfBlock" value="true" />
+    </inspection_tool>
   </profile>
 </component>

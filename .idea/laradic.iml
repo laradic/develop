@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
+<module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file:///production/laradic" />
     <output-test url="file:///test/laradic" />
@@ -74,6 +74,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fabpot/php-cs-fixer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/gabrielelana/byte-units" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
@@ -81,6 +82,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kriswallsmith/assetic" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/leafo/scssphp" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem" />
@@ -148,6 +150,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-util" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
@@ -157,8 +160,11 @@
       <excludeFolder url="file://$MODULE_DIR$/workbench/laradic/icon-generator/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/workbench/laradic/support/vendor" />
       <excludeFolder url="file://$MODULE_DIR$/workbench/laradic/support/vendor/anahkiasen" />
+      <excludeFolder url="file://$MODULE_DIR$/workbench/radic/blade-extensions/vendor" />
       <excludeFolder url="file://$MODULE_DIR$/workbench/radic/theme/metronic_v4.6" />
     </content>
+    <content url="file://$MODULE_DIR$/workbench/radic/blade-extensions/vendor/laradic/phing" />
+    <content url="file://$MODULE_DIR$/workbench/radic/blade-extensions/vendor/orchestra/testbench/fixture/storage/framework/views" />
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="groovy-1.8.6" level="application" />
@@ -193,6 +199,7 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
+          <root url="file://$MODULE_DIR$/vendor/fabpot/php-cs-fixer" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/gabrielelana/byte-units" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
@@ -200,6 +207,7 @@
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
           <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
+          <root url="file://$MODULE_DIR$/vendor/kriswallsmith/assetic" />
           <root url="file://$MODULE_DIR$/vendor/laravel/framework" />
           <root url="file://$MODULE_DIR$/vendor/leafo/scssphp" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
@@ -267,12 +275,14 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-util" />
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
           <root url="file://$MODULE_DIR$/vendor/symfony/routing" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/wikimedia/composer-merge-plugin" />
+          <root url="file:///usr/share/php" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
@@ -293,6 +303,7 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/erusev/parsedown" />
+          <root url="file://$MODULE_DIR$/vendor/fabpot/php-cs-fixer" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/gabrielelana/byte-units" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
@@ -300,6 +311,7 @@
           <root url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter" />
           <root url="file://$MODULE_DIR$/vendor/jeremeamia/SuperClosure" />
           <root url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema" />
+          <root url="file://$MODULE_DIR$/vendor/kriswallsmith/assetic" />
           <root url="file://$MODULE_DIR$/vendor/laravel/framework" />
           <root url="file://$MODULE_DIR$/vendor/leafo/scssphp" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
@@ -367,12 +379,31 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-util" />
           <root url="file://$MODULE_DIR$/vendor/symfony/process" />
           <root url="file://$MODULE_DIR$/vendor/symfony/routing" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/stopwatch" />
           <root url="file://$MODULE_DIR$/vendor/symfony/translation" />
           <root url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
           <root url="file://$MODULE_DIR$/vendor/wikimedia/composer-merge-plugin" />
+          <root url="file:///usr/share/php" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/php-cs-fixer.phar/" />
+          <root url="phar://$MODULE_DIR$/phing.phar/" />
+          <root url="phar://$MODULE_DIR$/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/php-cs-fixer.phar/" />
+          <root url="phar://$MODULE_DIR$/phing.phar/" />
+          <root url="phar://$MODULE_DIR$/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
         </SOURCES>
       </library>
     </orderEntry>

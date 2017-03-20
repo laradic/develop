@@ -4,15 +4,5 @@
  *
  * License and copyright information bundled with this package in the LICENSE file
  */
-
-
-class Te {
-    public $a = 'a';
-}
-
-
-$t = new Te;
-
-echo $t->a;
-echo $t->bdg + 1;
-echo $t->a;
+require_once __DIR__ . '/bootstrap/autoload.php';
+$app = require __DIR__ . '/bootstrap/app.php';

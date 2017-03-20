@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PhpUnit">
     <phpunit_settings>
-      <PhpUnitSettings load_method="CUSTOM_LOADER" bootstrap_file_path="$PROJECT_DIR$/vendor/autoload.php" configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" phpunit_phar_path="/usr/local/bin/phpunit" use_bootstrap_file="true" use_configuration_file="true" />
+      <PhpUnitSettings load_method="CUSTOM_LOADER" bootstrap_file_path="$PROJECT_DIR$/vendor/autoload.php" configuration_file_path="$PROJECT_DIR$/phpunit.xml" custom_loader_path="$PROJECT_DIR$/workbench/radic/blade-extensions/vendor/autoload.php" phpunit_phar_path="/usr/local/bin/phpunit" />
     </phpunit_settings>
   </component>
 </project>

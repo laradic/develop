@@ -25,4 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('blade/minify/{what}', 'BladeController@minify');
+Route::get('blade/minify/{what}', 'BladeController@getMinify');
+Route::get('blade', 'BladeController@getIndex');
+
+//Route::resource('','BladeController');

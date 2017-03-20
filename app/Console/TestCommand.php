@@ -7,7 +7,7 @@
  * The license can be found in the package and online at https://laradic.mit-license.org.
  *
  * @copyright Copyright 2017 (c) Robin Radic
- * @license https://laradic.mit-license.org The MIT License
+ * @license   https://laradic.mit-license.org The MIT License
  */
 
 namespace App\Console;
@@ -15,10 +15,14 @@ namespace App\Console;
 use Laradic\Console\Command;
 use Laradic\Support\Bench;
 
+/**
+ * {@inheritDoc}
+ */
 class TestCommand extends Command
 {
     protected $signature = 'test';
 
+    /** @var \Radic\BladeExtensions\BladeExtensions */
     protected $blade;
 
     protected $bench;
@@ -30,18 +34,23 @@ class TestCommand extends Command
     {
         parent::__construct();
         $this->bench = new Bench;
-        $this->blade = app('blade-extensions');
+//        $this->blade = app('blade-extensions');
     }
-
 
     public function handle()
     {
+        print view('directives.if-section.if-section')->render();
+    }
+
+
+    public function handle2()
+    {
         $this->bench->start();
         $this->loop('a', function () {
-            $this->blade->compileString('test a a $a', [ 'a' => 'foo' ], true);
+            $this->blade->compileString('test a a $a', [ 'a' => 'foo' ]);
         });
         $this->loop('b', function () {
-            $this->blade->compileString('test b b $a test b b $a test b b $a test b b $a', [ 'a' => 'foo' ], true);
+            $this->blade->compileString('test b b $a test b b $a test b b $a test b b $a', [ 'a' => 'foo' ]);
         });
         $this->bench->stop();
         collect($this->bench->getMarks())->each(function ($item) {

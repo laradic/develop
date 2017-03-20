@@ -11,6 +11,7 @@
     <mapping directory="$PROJECT_DIR$/workbench/laradic/icon-generator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/workbench/laradic/idea" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/workbench/laradic/phing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/workbench/laradic/php-build-tools" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/workbench/laradic/service-provider" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/workbench/laradic/support" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/workbench/laradic/testing" vcs="Git" />

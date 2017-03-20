@@ -12,6 +12,13 @@
 
 <ruleset name="Laradic Ruleset">
     <description>A custom coding standard.</description>
-    <rule ref="PSR2"/>
-
+    <rule ref="PSR2">
+        <exclude name="Generic.Files.LineLength"/>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="180"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
 </ruleset>

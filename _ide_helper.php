@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.3.6 on 2016-10-17.
+ * Generated for Laravel 5.3.30 on 2017-03-09.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -256,7 +256,6 @@ namespace {
         /**
          * Get or check the current application environment.
          *
-         * @param mixed
          * @return string|bool 
          * @static 
          */
@@ -946,6 +945,19 @@ namespace {
         }
         
         /**
+         * Get a closure to resolve the given type from the container.
+         *
+         * @param string $abstract
+         * @param array $defaults
+         * @return \Closure 
+         * @static 
+         */
+        public static function factory($abstract, $defaults = array()){
+            //Method inherited from \Illuminate\Container\Container            
+            return \Illuminate\Foundation\Application::factory($abstract, $defaults);
+        }
+        
+        /**
          * Instantiate a concrete instance of the given type.
          *
          * @param string $concrete
@@ -995,6 +1007,19 @@ namespace {
         public static function isShared($abstract){
             //Method inherited from \Illuminate\Container\Container            
             return \Illuminate\Foundation\Application::isShared($abstract);
+        }
+        
+        /**
+         * Get the alias for an abstract if available.
+         *
+         * @param string $abstract
+         * @return string 
+         * @throws \LogicException
+         * @static 
+         */
+        public static function getAlias($abstract){
+            //Method inherited from \Illuminate\Container\Container            
+            return \Illuminate\Foundation\Application::getAlias($abstract);
         }
         
         /**
@@ -1216,6 +1241,18 @@ namespace {
         public static function bootstrap(){
             //Method inherited from \Illuminate\Foundation\Console\Kernel            
             \App\Console\Kernel::bootstrap();
+        }
+        
+        /**
+         * Set the Artisan application instance.
+         *
+         * @param \Illuminate\Console\Application $artisan
+         * @return void 
+         * @static 
+         */
+        public static function setArtisan($artisan){
+            //Method inherited from \Illuminate\Foundation\Console\Kernel            
+            \App\Console\Kernel::setArtisan($artisan);
         }
         
     }
@@ -2530,7 +2567,6 @@ namespace {
         /**
          * Queue a cookie to send with the next response.
          *
-         * @param mixed
          * @return void 
          * @static 
          */
@@ -2592,7 +2628,7 @@ namespace {
         /**
          * Encrypt the given value.
          *
-         * @param string $value
+         * @param mixed $value
          * @return string 
          * @throws \Illuminate\Contracts\Encryption\EncryptException
          * @static 
@@ -2604,7 +2640,7 @@ namespace {
         /**
          * Decrypt the given value.
          *
-         * @param string $payload
+         * @param mixed $payload
          * @return string 
          * @throws \Illuminate\Contracts\Encryption\DecryptException
          * @static 
@@ -2746,6 +2782,18 @@ namespace {
         }
         
         /**
+         * Bind values to their parameters in the given statement.
+         *
+         * @param \PDOStatement $statement
+         * @param array $bindings
+         * @return void 
+         * @static 
+         */
+        public static function bindValues($statement, $bindings){
+            \Illuminate\Database\MySqlConnection::bindValues($statement, $bindings);
+        }
+        
+        /**
          * Set the query grammar to the default implementation.
          *
          * @return void 
@@ -2818,12 +2866,13 @@ namespace {
          *
          * @param string $query
          * @param array $bindings
+         * @param bool $useReadPdo
          * @return mixed 
          * @static 
          */
-        public static function selectOne($query, $bindings = array()){
+        public static function selectOne($query, $bindings = array(), $useReadPdo = true){
             //Method inherited from \Illuminate\Database\Connection            
-            return \Illuminate\Database\MySqlConnection::selectOne($query, $bindings);
+            return \Illuminate\Database\MySqlConnection::selectOne($query, $bindings, $useReadPdo);
         }
         
         /**
@@ -2854,26 +2903,17 @@ namespace {
         }
         
         /**
-         * 
+         * Run a select statement against the database and returns a generator.
          *
+         * @param string $query
+         * @param array $bindings
+         * @param bool $useReadPdo
+         * @return \Generator 
          * @static 
          */
         public static function cursor($query, $bindings = array(), $useReadPdo = true){
             //Method inherited from \Illuminate\Database\Connection            
             return \Illuminate\Database\MySqlConnection::cursor($query, $bindings, $useReadPdo);
-        }
-        
-        /**
-         * Bind values to their parameters in the given statement.
-         *
-         * @param \PDOStatement $statement
-         * @param array $bindings
-         * @return void 
-         * @static 
-         */
-        public static function bindValues($statement, $bindings){
-            //Method inherited from \Illuminate\Database\Connection            
-            \Illuminate\Database\MySqlConnection::bindValues($statement, $bindings);
         }
         
         /**
@@ -3135,7 +3175,6 @@ namespace {
          *
          * @param \PDO|null $pdo
          * @return $this 
-         * @throws \RuntimeException
          * @static 
          */
         public static function setPdo($pdo){
@@ -3669,7 +3708,7 @@ namespace {
          *
          * @param int $count
          * @param callable $callback
-         * @param string $alias
+         * @param string $column
          * @return bool 
          * @static 
          */
@@ -3768,17 +3807,18 @@ namespace {
          *
          * @param bool $value
          * @param \Closure $callback
+         * @param \Closure $default
          * @return $this 
          * @static 
          */
-        public static function when($value, $callback){
-            return \Illuminate\Database\Eloquent\Builder::when($value, $callback);
+        public static function when($value, $callback, $default = null){
+            return \Illuminate\Database\Eloquent\Builder::when($value, $callback, $default);
         }
         
         /**
          * Add a basic where clause to the query.
          *
-         * @param string $column
+         * @param string|\Closure $column
          * @param string $operator
          * @param mixed $value
          * @param string $boolean
@@ -3792,7 +3832,7 @@ namespace {
         /**
          * Add an "or where" clause to the query.
          *
-         * @param string $column
+         * @param string|\Closure $column
          * @param string $operator
          * @param mixed $value
          * @return \Illuminate\Database\Eloquent\Builder|static 
@@ -3834,13 +3874,13 @@ namespace {
          * Add a relationship count / exists condition to the query with where clauses.
          *
          * @param string $relation
-         * @param \Closure $callback
+         * @param \Closure|null $callback
          * @param string $operator
          * @param int $count
          * @return \Illuminate\Database\Eloquent\Builder|static 
          * @static 
          */
-        public static function whereHas($relation, $callback, $operator = '>=', $count = 1){
+        public static function whereHas($relation, $callback = null, $operator = '>=', $count = 1){
             return \Illuminate\Database\Eloquent\Builder::whereHas($relation, $callback, $operator, $count);
         }
         
@@ -5425,6 +5465,18 @@ namespace {
         }
         
         /**
+         * Get or set UNIX mode of a file or directory.
+         *
+         * @param string $path
+         * @param int $mode
+         * @return mixed 
+         * @static 
+         */
+        public static function chmod($path, $mode = null){
+            return \Illuminate\Filesystem\Filesystem::chmod($path, $mode);
+        }
+        
+        /**
          * Delete the file at a given path.
          *
          * @param string|array $paths
@@ -5568,6 +5620,17 @@ namespace {
          */
         public static function isDirectory($directory){
             return \Illuminate\Filesystem\Filesystem::isDirectory($directory);
+        }
+        
+        /**
+         * Determine if the given path is readable.
+         *
+         * @param string $path
+         * @return bool 
+         * @static 
+         */
+        public static function isReadable($path){
+            return \Illuminate\Filesystem\Filesystem::isReadable($path);
         }
         
         /**
@@ -5929,6 +5992,261 @@ namespace {
     }
 
 
+    class Lang extends \Illuminate\Support\Facades\Lang{
+        
+        /**
+         * Determine if a translation exists for a given locale.
+         *
+         * @param string $key
+         * @param string|null $locale
+         * @return bool 
+         * @static 
+         */
+        public static function hasForLocale($key, $locale = null){
+            return \Illuminate\Translation\Translator::hasForLocale($key, $locale);
+        }
+        
+        /**
+         * Determine if a translation exists.
+         *
+         * @param string $key
+         * @param string|null $locale
+         * @param bool $fallback
+         * @return bool 
+         * @static 
+         */
+        public static function has($key, $locale = null, $fallback = true){
+            return \Illuminate\Translation\Translator::has($key, $locale, $fallback);
+        }
+        
+        /**
+         * Get the translation for the given key.
+         *
+         * @param string $key
+         * @param array $replace
+         * @param string|null $locale
+         * @param bool $fallback
+         * @return string|array|null 
+         * @static 
+         */
+        public static function get($key, $replace = array(), $locale = null, $fallback = true){
+            return \Illuminate\Translation\Translator::get($key, $replace, $locale, $fallback);
+        }
+        
+        /**
+         * Add translation lines to the given locale.
+         *
+         * @param array $lines
+         * @param string $locale
+         * @param string $namespace
+         * @return void 
+         * @static 
+         */
+        public static function addLines($lines, $locale, $namespace = '*'){
+            \Illuminate\Translation\Translator::addLines($lines, $locale, $namespace);
+        }
+        
+        /**
+         * Get a translation according to an integer value.
+         *
+         * @param string $key
+         * @param int|array|\Countable $number
+         * @param array $replace
+         * @param string $locale
+         * @return string 
+         * @static 
+         */
+        public static function choice($key, $number, $replace = array(), $locale = null){
+            return \Illuminate\Translation\Translator::choice($key, $number, $replace, $locale);
+        }
+        
+        /**
+         * Get the translation for a given key.
+         *
+         * @param string $id
+         * @param array $parameters
+         * @param string $domain
+         * @param string $locale
+         * @return string|array|null 
+         * @static 
+         */
+        public static function trans($id, $parameters = array(), $domain = 'messages', $locale = null){
+            return \Illuminate\Translation\Translator::trans($id, $parameters, $domain, $locale);
+        }
+        
+        /**
+         * Get a translation according to an integer value.
+         *
+         * @param string $id
+         * @param int|array|\Countable $number
+         * @param array $parameters
+         * @param string $domain
+         * @param string $locale
+         * @return string 
+         * @static 
+         */
+        public static function transChoice($id, $number, $parameters = array(), $domain = 'messages', $locale = null){
+            return \Illuminate\Translation\Translator::transChoice($id, $number, $parameters, $domain, $locale);
+        }
+        
+        /**
+         * Load the specified language group.
+         *
+         * @param string $namespace
+         * @param string $group
+         * @param string $locale
+         * @return void 
+         * @static 
+         */
+        public static function load($namespace, $group, $locale){
+            \Illuminate\Translation\Translator::load($namespace, $group, $locale);
+        }
+        
+        /**
+         * Add a new namespace to the loader.
+         *
+         * @param string $namespace
+         * @param string $hint
+         * @return void 
+         * @static 
+         */
+        public static function addNamespace($namespace, $hint){
+            \Illuminate\Translation\Translator::addNamespace($namespace, $hint);
+        }
+        
+        /**
+         * Parse a key into namespace, group, and item.
+         *
+         * @param string $key
+         * @return array 
+         * @static 
+         */
+        public static function parseKey($key){
+            return \Illuminate\Translation\Translator::parseKey($key);
+        }
+        
+        /**
+         * Get the message selector instance.
+         *
+         * @return \Symfony\Component\Translation\MessageSelector 
+         * @static 
+         */
+        public static function getSelector(){
+            return \Illuminate\Translation\Translator::getSelector();
+        }
+        
+        /**
+         * Set the message selector instance.
+         *
+         * @param \Symfony\Component\Translation\MessageSelector $selector
+         * @return void 
+         * @static 
+         */
+        public static function setSelector($selector){
+            \Illuminate\Translation\Translator::setSelector($selector);
+        }
+        
+        /**
+         * Get the language line loader implementation.
+         *
+         * @return \Illuminate\Translation\LoaderInterface 
+         * @static 
+         */
+        public static function getLoader(){
+            return \Illuminate\Translation\Translator::getLoader();
+        }
+        
+        /**
+         * Get the default locale being used.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function locale(){
+            return \Illuminate\Translation\Translator::locale();
+        }
+        
+        /**
+         * Get the default locale being used.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getLocale(){
+            return \Illuminate\Translation\Translator::getLocale();
+        }
+        
+        /**
+         * Set the default locale.
+         *
+         * @param string $locale
+         * @return void 
+         * @static 
+         */
+        public static function setLocale($locale){
+            \Illuminate\Translation\Translator::setLocale($locale);
+        }
+        
+        /**
+         * Get the fallback locale being used.
+         *
+         * @return string 
+         * @static 
+         */
+        public static function getFallback(){
+            return \Illuminate\Translation\Translator::getFallback();
+        }
+        
+        /**
+         * Set the fallback locale being used.
+         *
+         * @param string $fallback
+         * @return void 
+         * @static 
+         */
+        public static function setFallback($fallback){
+            \Illuminate\Translation\Translator::setFallback($fallback);
+        }
+        
+        /**
+         * Set the parsed value of a key.
+         *
+         * @param string $key
+         * @param array $parsed
+         * @return void 
+         * @static 
+         */
+        public static function setParsedKey($key, $parsed){
+            //Method inherited from \Illuminate\Support\NamespacedItemResolver            
+            \Illuminate\Translation\Translator::setParsedKey($key, $parsed);
+        }
+        
+        /**
+         * Register a custom macro.
+         *
+         * @param string $name
+         * @param callable $macro
+         * @return void 
+         * @static 
+         */
+        public static function macro($name, $macro){
+            \Illuminate\Translation\Translator::macro($name, $macro);
+        }
+        
+        /**
+         * Checks if macro is registered.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */
+        public static function hasMacro($name){
+            return \Illuminate\Translation\Translator::hasMacro($name);
+        }
+        
+    }
+
+
     class Log extends \Illuminate\Support\Facades\Log{
         
         /**
@@ -6160,6 +6478,18 @@ namespace {
          */
         public static function alwaysFrom($address, $name = null){
             \Illuminate\Mail\Mailer::alwaysFrom($address, $name);
+        }
+        
+        /**
+         * Set the global reply-to address and name.
+         *
+         * @param string $address
+         * @param string|null $name
+         * @return void 
+         * @static 
+         */
+        public static function alwaysReplyTo($address, $name = null){
+            \Illuminate\Mail\Mailer::alwaysReplyTo($address, $name);
         }
         
         /**
@@ -6752,11 +7082,12 @@ namespace {
          *
          * @param int $status
          * @param array $headers
+         * @param string $fallback
          * @return \Illuminate\Http\RedirectResponse 
          * @static 
          */
-        public static function back($status = 302, $headers = array()){
-            return \Illuminate\Routing\Redirector::back($status, $headers);
+        public static function back($status = 302, $headers = array(), $fallback = false){
+            return \Illuminate\Routing\Redirector::back($status, $headers, $fallback);
         }
         
         /**
@@ -7064,7 +7395,6 @@ namespace {
         /**
          * Determine if the current request URI matches a pattern.
          *
-         * @param mixed  string
          * @return bool 
          * @static 
          */
@@ -7075,7 +7405,6 @@ namespace {
         /**
          * Determine if the current request URL and query string matches a pattern.
          *
-         * @param mixed  string
          * @return bool 
          * @static 
          */
@@ -7528,7 +7857,7 @@ namespace {
          * @param array $cookies The COOKIE parameters
          * @param array $files The FILES parameters
          * @param array $server The SERVER parameters
-         * @return \Request The duplicated request
+         * @return static 
          * @static 
          */
         public static function duplicate($query = null, $request = null, $attributes = null, $cookies = null, $files = null, $server = null){
@@ -7698,7 +8027,7 @@ namespace {
         /**
          * Creates a new request with values from PHP's super globals.
          *
-         * @return \Request A new request
+         * @return static 
          * @static 
          */
         public static function createFromGlobals(){
@@ -7719,7 +8048,7 @@ namespace {
          * @param array $files The request files ($_FILES)
          * @param array $server The server parameters ($_SERVER)
          * @param string $content The raw body data
-         * @return \Request A Request instance
+         * @return static 
          * @static 
          */
         public static function create($uri, $method = 'GET', $parameters = array(), $cookies = array(), $files = array(), $server = array(), $content = null){
@@ -8449,12 +8778,26 @@ namespace {
         /**
          * Checks whether the method is safe or not.
          *
+         * @see https://tools.ietf.org/html/rfc7231#section-4.2.1
+         * @param bool $andCacheable Adds the additional condition that the method should be cacheable. True by default.
          * @return bool 
          * @static 
          */
         public static function isMethodSafe(){
             //Method inherited from \Symfony\Component\HttpFoundation\Request            
             return \Illuminate\Http\Request::isMethodSafe();
+        }
+        
+        /**
+         * Checks whether the method is cacheable or not.
+         *
+         * @see https://tools.ietf.org/html/rfc7231#section-4.2.3
+         * @return bool 
+         * @static 
+         */
+        public static function isMethodCacheable(){
+            //Method inherited from \Symfony\Component\HttpFoundation\Request            
+            return \Illuminate\Http\Request::isMethodCacheable();
         }
         
         /**
@@ -8554,7 +8897,7 @@ namespace {
          * It works if your JavaScript library sets an X-Requested-With HTTP header.
          * It is known to work with common JavaScript frameworks:
          *
-         * @link http://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
+         * @see http://en.wikipedia.org/wiki/List_of_Ajax_frameworks#JavaScript
          * @return bool true if the request is an XMLHttpRequest, false otherwise
          * @static 
          */
@@ -8915,6 +9258,17 @@ namespace {
          */
         public static function resourceParameters($parameters = array()){
             \Illuminate\Routing\Router::resourceParameters($parameters);
+        }
+        
+        /**
+         * Get or set the verbs used in the resource URIs.
+         *
+         * @param array $verbs
+         * @return array|null 
+         * @static 
+         */
+        public static function resourceVerbs($verbs = array()){
+            return \Illuminate\Routing\Router::resourceVerbs($verbs);
         }
         
         /**
@@ -9283,7 +9637,6 @@ namespace {
         /**
          * Alias for the "currentRouteNamed" method.
          *
-         * @param mixed  string
          * @return bool 
          * @static 
          */
@@ -9315,7 +9668,6 @@ namespace {
         /**
          * Alias for the "currentRouteUses" method.
          *
-         * @param mixed  string
          * @return bool 
          * @static 
          */
@@ -9469,12 +9821,12 @@ namespace {
          *
          * @param string $table
          * @param \Closure $callback
-         * @return \Illuminate\Database\Schema\Blueprint 
+         * @return void 
          * @static 
          */
         public static function table($table, $callback){
             //Method inherited from \Illuminate\Database\Schema\Builder            
-            return \Illuminate\Database\Schema\MySqlBuilder::table($table, $callback);
+            \Illuminate\Database\Schema\MySqlBuilder::table($table, $callback);
         }
         
         /**
@@ -9482,36 +9834,36 @@ namespace {
          *
          * @param string $table
          * @param \Closure $callback
-         * @return \Illuminate\Database\Schema\Blueprint 
+         * @return void 
          * @static 
          */
         public static function create($table, $callback){
             //Method inherited from \Illuminate\Database\Schema\Builder            
-            return \Illuminate\Database\Schema\MySqlBuilder::create($table, $callback);
+            \Illuminate\Database\Schema\MySqlBuilder::create($table, $callback);
         }
         
         /**
          * Drop a table from the schema.
          *
          * @param string $table
-         * @return \Illuminate\Database\Schema\Blueprint 
+         * @return void 
          * @static 
          */
         public static function drop($table){
             //Method inherited from \Illuminate\Database\Schema\Builder            
-            return \Illuminate\Database\Schema\MySqlBuilder::drop($table);
+            \Illuminate\Database\Schema\MySqlBuilder::drop($table);
         }
         
         /**
          * Drop a table from the schema if it exists.
          *
          * @param string $table
-         * @return \Illuminate\Database\Schema\Blueprint 
+         * @return void 
          * @static 
          */
         public static function dropIfExists($table){
             //Method inherited from \Illuminate\Database\Schema\Builder            
-            return \Illuminate\Database\Schema\MySqlBuilder::dropIfExists($table);
+            \Illuminate\Database\Schema\MySqlBuilder::dropIfExists($table);
         }
         
         /**
@@ -9519,12 +9871,12 @@ namespace {
          *
          * @param string $from
          * @param string $to
-         * @return \Illuminate\Database\Schema\Blueprint 
+         * @return void 
          * @static 
          */
         public static function rename($from, $to){
             //Method inherited from \Illuminate\Database\Schema\Builder            
-            return \Illuminate\Database\Schema\MySqlBuilder::rename($from, $to);
+            \Illuminate\Database\Schema\MySqlBuilder::rename($from, $to);
         }
         
         /**
@@ -9878,6 +10230,18 @@ namespace {
         }
         
         /**
+         * Get an item from the session, or store the default value.
+         *
+         * @param string $key
+         * @param \Closure $callback
+         * @return mixed 
+         * @static 
+         */
+        public static function remember($key, $callback){
+            return \Illuminate\Session\Store::remember($key, $callback);
+        }
+        
+        /**
          * Push a value onto a session array.
          *
          * @param string $key
@@ -9926,8 +10290,7 @@ namespace {
         }
         
         /**
-         * Flash a key / value pair to the session
-         * for immediate use.
+         * Flash a key / value pair to the session for immediate use.
          *
          * @param string $key
          * @param mixed $value
@@ -10620,7 +10983,7 @@ namespace {
         }
         
         /**
-         * Generate a URL to an application asset.
+         * Generate the URL to an application asset.
          *
          * @param string $path
          * @param bool|null $secure
@@ -10632,7 +10995,7 @@ namespace {
         }
         
         /**
-         * Generate a URL to an asset from a custom root domain such as CDN, etc.
+         * Generate the URL to an asset from a custom root domain such as CDN, etc.
          *
          * @param string $root
          * @param string $path
@@ -10645,7 +11008,7 @@ namespace {
         }
         
         /**
-         * Generate a URL to a secure asset.
+         * Generate the URL to a secure asset.
          *
          * @param string $path
          * @return string 
@@ -10791,6 +11154,120 @@ namespace {
          */
         public static function hasMacro($name){
             return \Illuminate\Routing\UrlGenerator::hasMacro($name);
+        }
+        
+    }
+
+
+    class Validator extends \Illuminate\Support\Facades\Validator{
+        
+        /**
+         * Create a new Validator instance.
+         *
+         * @param array $data
+         * @param array $rules
+         * @param array $messages
+         * @param array $customAttributes
+         * @return \Illuminate\Validation\Validator 
+         * @static 
+         */
+        public static function make($data, $rules, $messages = array(), $customAttributes = array()){
+            return \Illuminate\Validation\Factory::make($data, $rules, $messages, $customAttributes);
+        }
+        
+        /**
+         * Validate the given data against the provided rules.
+         *
+         * @param array $data
+         * @param array $rules
+         * @param array $messages
+         * @param array $customAttributes
+         * @return void 
+         * @throws \Illuminate\Validation\ValidationException
+         * @static 
+         */
+        public static function validate($data, $rules, $messages = array(), $customAttributes = array()){
+            \Illuminate\Validation\Factory::validate($data, $rules, $messages, $customAttributes);
+        }
+        
+        /**
+         * Register a custom validator extension.
+         *
+         * @param string $rule
+         * @param \Closure|string $extension
+         * @param string $message
+         * @return void 
+         * @static 
+         */
+        public static function extend($rule, $extension, $message = null){
+            \Illuminate\Validation\Factory::extend($rule, $extension, $message);
+        }
+        
+        /**
+         * Register a custom implicit validator extension.
+         *
+         * @param string $rule
+         * @param \Closure|string $extension
+         * @param string $message
+         * @return void 
+         * @static 
+         */
+        public static function extendImplicit($rule, $extension, $message = null){
+            \Illuminate\Validation\Factory::extendImplicit($rule, $extension, $message);
+        }
+        
+        /**
+         * Register a custom implicit validator message replacer.
+         *
+         * @param string $rule
+         * @param \Closure|string $replacer
+         * @return void 
+         * @static 
+         */
+        public static function replacer($rule, $replacer){
+            \Illuminate\Validation\Factory::replacer($rule, $replacer);
+        }
+        
+        /**
+         * Set the Validator instance resolver.
+         *
+         * @param \Closure $resolver
+         * @return void 
+         * @static 
+         */
+        public static function resolver($resolver){
+            \Illuminate\Validation\Factory::resolver($resolver);
+        }
+        
+        /**
+         * Get the Translator implementation.
+         *
+         * @return \Symfony\Component\Translation\TranslatorInterface 
+         * @static 
+         */
+        public static function getTranslator(){
+            return \Illuminate\Validation\Factory::getTranslator();
+        }
+        
+        /**
+         * Get the Presence Verifier implementation.
+         *
+         * @return \Illuminate\Validation\PresenceVerifierInterface 
+         * @static 
+         */
+        public static function getPresenceVerifier(){
+            return \Illuminate\Validation\Factory::getPresenceVerifier();
+        }
+        
+        /**
+         * Set the Presence Verifier implementation.
+         *
+         * @param \Illuminate\Validation\PresenceVerifierInterface $presenceVerifier
+         * @return void 
+         * @static 
+         */
+        public static function setPresenceVerifier($presenceVerifier){
+            \Illuminate\Validation\Factory::setPresenceVerifier($presenceVerifier);
         }
         
     }
@@ -11124,7 +11601,7 @@ namespace {
         /**
          * Add new loop to the stack.
          *
-         * @param array|\Countable $data
+         * @param \Countable|array $data
          * @return void 
          * @static 
          */
@@ -11359,5 +11836,313 @@ namespace {
     }
 
 
+    class Asset extends \Laradic\Assets\Facades\Asset{
+        
+        /**
+         * Creates an AssetInterface asset
+         *
+         * @param $handle
+         * @param $path
+         * @param array $dependencies
+         * @return \Asset 
+         * @static 
+         */
+        public static function create($handle, $path, $dependencies = array()){
+            return \Laradic\Assets\Factory::create($handle, $path, $dependencies);
+        }
+        
+        /**
+         * createCollection method
+         *
+         * @param array $assets
+         * @return \Laradic\Assets\AssetInterface 
+         * @static 
+         */
+        public static function createCollection($assets = array()){
+            return \Laradic\Assets\Factory::createCollection($assets);
+        }
+        
+        /**
+         * query method
+         *
+         * @param string $query - The query, wich is actually a NamespacedItemResolver key.
+         * @return \Laradic\Assets\Assetic\Asset[]|\Laradic\Assets\Builder\Area|\Laradic\Assets\Builder\Group 
+         * @static 
+         */
+        public static function query($query){
+            return \Laradic\Assets\Factory::query($query);
+        }
+        
+        /**
+         * Compiles the result of the given query
+         *
+         * @param string $type
+         * @param string $query - The query, wich is actually a NamespacedItemResolver key.
+         * @param bool $combine
+         * @return \Laradic\Assets\Compiler\CompiledCollection 
+         * @static 
+         */
+        public static function compile($type, $query, $combine = true){
+            return \Laradic\Assets\Factory::compile($type, $query, $combine);
+        }
+        
+        /**
+         * Get the Area that references $id
+         *
+         * @param string|mixed $id
+         * @return \Laradic\Assets\Builder\Area 
+         * @static 
+         */
+        public static function area($id){
+            return \Laradic\Assets\Factory::area($id);
+        }
+        
+        /**
+         * Returns a <script src=""> html string
+         *
+         * @param $key
+         * @param array $attributes
+         * @param bool $secure
+         * @return string 
+         * @static 
+         */
+        public static function script($key, $attributes = array(), $secure = false){
+            return \Laradic\Assets\Factory::script($key, $attributes, $secure);
+        }
+        
+        /**
+         * Returns a <link href=""> html string
+         *
+         * @param $key
+         * @param array $attributes
+         * @param bool $secure
+         * @return string 
+         * @static 
+         */
+        public static function style($key, $attributes = array(), $secure = false){
+            return \Laradic\Assets\Factory::style($key, $attributes, $secure);
+        }
+        
+        /**
+         * 
+         *
+         * @return \Laradic\Assets\Compiler\Compiler 
+         * @static 
+         */
+        public static function getCompiler(){
+            return \Laradic\Assets\Factory::getCompiler();
+        }
+        
+        /**
+         * addGlobalFilter
+         *
+         * @param $extension
+         * @param $callback
+         * @return \Laradic\Assets\Factory 
+         * @static 
+         */
+        public static function addGlobalFilter($extension, $callback){
+            return \Laradic\Assets\Factory::addGlobalFilter($extension, $callback);
+        }
+        
+        /**
+         * getGlobalFilters
+         *
+         * @param $extension
+         * @return array 
+         * @static 
+         */
+        public static function getGlobalFilters($extension){
+            return \Laradic\Assets\Factory::getGlobalFilters($extension);
+        }
+        
+        /**
+         * Removes all chached files
+         *
+         * @static 
+         */
+        public static function deleteAllCached(){
+            return \Laradic\Assets\Factory::deleteAllCached();
+        }
+        
+        /**
+         * Resolves the type of the given asset
+         *
+         * @param \Laradic\Assets\Assetic\AssetInterface $asset
+         * @return int|string 
+         * @static 
+         */
+        public static function resolveType($asset){
+            return \Laradic\Assets\Factory::resolveType($asset);
+        }
+        
+        /**
+         * Returns the absolute path to the asset. Uses the AssetFinder to retreive the path with the given key
+         *
+         * @param $key
+         * @return mixed 
+         * @static 
+         */
+        public static function getPath($key){
+            return \Laradic\Assets\Factory::getPath($key);
+        }
+        
+        /**
+         * Returns the url to the asset. Uses the AssetFinder to retreive the path with the given key
+         *
+         * @param $key
+         * @return string 
+         * @static 
+         */
+        public static function getUrl($key){
+            return \Laradic\Assets\Factory::getUrl($key);
+        }
+        
+        /**
+         * Returns the uri to the asset. Uses the AssetFinder to retreive the path with the given key
+         *
+         * @param $key
+         * @return string 
+         * @static 
+         */
+        public static function getUri($key){
+            return \Laradic\Assets\Factory::getUri($key);
+        }
+        
+        /**
+         * Returns the cache directory path, relative to the public_path
+         *
+         * @return mixed 
+         * @static 
+         */
+        public static function getCachePath(){
+            return \Laradic\Assets\Factory::getCachePath();
+        }
+        
+        /**
+         * Set the cachePath value
+         *
+         * @param string $cachePath
+         * @return \Laradic\Assets\Factory 
+         * @static 
+         */
+        public static function setCachePath($cachePath){
+            return \Laradic\Assets\Factory::setCachePath($cachePath);
+        }
+        
+        /**
+         * 
+         *
+         * @param null $debug
+         * @static 
+         */
+        public static function setDebug($debug){
+            return \Laradic\Assets\Factory::setDebug($debug);
+        }
+        
+        /**
+         * isDebug method
+         *
+         * @return bool|null 
+         * @static 
+         */
+        public static function isDebug(){
+            return \Laradic\Assets\Factory::isDebug();
+        }
+        
+        /**
+         * 
+         *
+         * @return mixed 
+         * @static 
+         */
+        public static function getTypes(){
+            return \Laradic\Assets\Factory::getTypes();
+        }
+        
+        /**
+         * Set the types value
+         *
+         * @param mixed $types
+         * @return \Laradic\Assets\Factory 
+         * @static 
+         */
+        public static function setTypes($types){
+            return \Laradic\Assets\Factory::setTypes($types);
+        }
+        
+        /**
+         * Register a custom macro.
+         *
+         * @param string $name
+         * @param callable $macro
+         * @return void 
+         * @static 
+         */
+        public static function macro($name, $macro){
+            \Laradic\Assets\Factory::macro($name, $macro);
+        }
+        
+        /**
+         * Checks if macro is registered.
+         *
+         * @param string $name
+         * @return bool 
+         * @static 
+         */
+        public static function hasMacro($name){
+            return \Laradic\Assets\Factory::hasMacro($name);
+        }
+        
+    }
+
+
+    class BladeExtensions extends \Radic\BladeExtensions\Facades\BladeExtensions{
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */
+        public static function compileString($string, $vars = array()){
+            return \Radic\BladeExtensions\BladeExtensions::compileString($string, $vars);
+        }
+        
+        /**
+         * 
+         *
+         * @inheritDoc 
+         * @static 
+         */
+        public static function pushToStack($stackName, $targetViews, $content){
+            return \Radic\BladeExtensions\BladeExtensions::pushToStack($stackName, $targetViews, $content);
+        }
+        
+        /**
+         * 
+         *
+         * @return \Radic\BladeExtensions\DirectiveRegistry 
+         * @static 
+         */
+        public static function getDirectives(){
+            return \Radic\BladeExtensions\BladeExtensions::getDirectives();
+        }
+        
+        /**
+         * 
+         *
+         * @return \Radic\BladeExtensions\HelperRepository 
+         * @static 
+         */
+        public static function getHelpers(){
+            return \Radic\BladeExtensions\BladeExtensions::getHelpers();
+        }
+        
+    }
+
+
 }
+
+
 

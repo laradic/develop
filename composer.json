@@ -14,7 +14,8 @@
         "barryvdh/laravel-ide-helper": "~2.2",
         "composer/composer": "^1.2",
         "phpspec/phpspec": "^3.1",
-        "laradic/idea": "dev-master@dev"
+        "laradic/idea": "dev-master@dev",
+        "orchestra/testbench": "3.3.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -25,7 +26,6 @@
         "laradic/testing": "~1.0",
         "laradic/phing": "~1.0",
         "orchestra/testing": "~3.2",
-        "erusev/parsedown": "~1.5",
         "matthiasmullie/minify": "~1.3"
     },
     "autoload": {
@@ -76,6 +76,7 @@
         "merge-plugin": {
             "include": [
                 "workbench/laradic/support/composer.json",
+                "workbench/laradic/assets/composer.json",
                 "workbench/laradic/testing/composer.json",
                 "workbench/laradic/phing/composer.json",
                 "workbench/laradic/annotation-scanner/composer.json",
@@ -98,6 +99,7 @@
         "laradic/console": "*",
         "laradic/git": "*",
         "laradic/idea": "*",
+        "laradic/assets": "*",
         "laradic/icon-generator": "*",
         "laradic/service-provider": "*",
         "laradic/dependency-sorter": "*",

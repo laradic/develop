@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="workbench packages src php" pattern="file:workbench/*/*/src/*.php" />
+</component>

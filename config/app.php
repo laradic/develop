@@ -1,4 +1,14 @@
 <?php
+/**
+ * Part of the Laradic PHP Packages.
+ *
+ * Copyright (c) 2017. Robin Radic.
+ *
+ * The license can be found in the package and online at https://laradic.mit-license.org.
+ *
+ * @copyright Copyright 2017 (c) Robin Radic
+ * @license https://laradic.mit-license.org The MIT License
+ */
 
 return [
 
@@ -186,7 +196,7 @@ return [
         'Validator'       => \Illuminate\Support\Facades\Validator::class,
         'View'            => \Illuminate\Support\Facades\View::class,
         'Asset'           => \Laradic\Assets\Facades\Asset::class,
-//        'BladeExtensions' => \Radic\BladeExtensions\Facades\BladeExtensions::class,
+        'BladeExtensions' => \Radic\BladeExtensions\Facades\BladeExtensions::class,
     ],
 
 ];

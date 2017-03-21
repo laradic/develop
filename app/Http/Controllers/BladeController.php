@@ -7,7 +7,7 @@
  * The license can be found in the package and online at https://laradic.mit-license.org.
  *
  * @copyright Copyright 2017 (c) Robin Radic
- * @license   https://laradic.mit-license.org The MIT License
+ * @license https://laradic.mit-license.org The MIT License
  */
 
 namespace App\Http\Controllers;
@@ -23,18 +23,33 @@ class BladeController extends Controller
      */
     public function __construct()
     {
-        view()->addNamespace('blade-extensions', [ base_path('vendor/radic/blade-extensions/tests/views'), base_path('workbench/radic/blade-extensions/tests/views') ]);
+        view()->addLocation(base_path('workbench/radic/blade-extensions/tests/views'));
     }
 
     public function getMinify($what)
     {
-        return view('blade-extensions::minify/' . $what);
+        return view('minify/' . $what);
     }
 
     public function getIndex()
     {
+        return view('index');
+    }
+
+    public function getDump()
+    {
         $fs = new Filesystem;
         $files = $fs->allFiles(storage_path());
-        return view('blade-extensions::dump', compact('fs', 'files'));
+        return view('dump', compact('fs', 'files'));
+    }
+
+    public function getIfSection()
+    {
+        return view('directives.if-section.title-content');
+    }
+
+    public function getEmbed()
+    {
+        return view('directives.embed.index', ['username' => 'TestUserName']);
     }
 }

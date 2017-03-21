@@ -7,11 +7,12 @@
  * The license can be found in the package and online at https://laradic.mit-license.org.
  *
  * @copyright Copyright 2017 (c) Robin Radic
- * @license   https://laradic.mit-license.org The MIT License
+ * @license https://laradic.mit-license.org The MIT License
  */
 
 namespace App\Console;
 
+use Laradic\Assets\Assetic\AssetInterface;
 use Laradic\Console\Command;
 use Laradic\Support\Bench;
 
@@ -39,7 +40,15 @@ class TestCommand extends Command
 
     public function handle()
     {
-        print view('directives.if-section.if-section')->render();
+        $assets = app('laradic.assets');
+        $assets->setDebug(false);
+        $asset = $assets->create('manifest', 'vendor/lodash/lodash.js');
+        $compiledAsset = $asset->compile(true);
+
+        $css = $assets->create('st', 'styles/codex.core.css');
+        $compiledCss = $css->compile();
+        $paths = $compiledCss->getPaths();
+
     }
 
 

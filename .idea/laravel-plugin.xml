@@ -5,7 +5,7 @@
     <option name="routerNamespace" value="" />
     <option name="templatePaths">
       <list>
-        <templatePath namespace="blade-extensions" path="workbench/radic/blade-extensions/tests/views" />
+        <templatePath namespace="" path="workbench/radic/blade-extensions/tests/views" />
       </list>
     </option>
   </component>

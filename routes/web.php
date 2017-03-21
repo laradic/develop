@@ -25,7 +25,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('blade/minify/{what}', 'BladeController@getMinify');
-Route::get('blade', 'BladeController@getIndex');
-
+Route::get('blade', 'BladeController@getIndex')->name('blade.index');
+Route::get('blade/dump', 'BladeController@getDump')->name('blade.dump');
+Route::get('blade/ifsection', 'BladeController@getIfSection')->name('blade.ifsection');
+Route::get('blade/minify/{what}', 'BladeController@getMinify')->name('blade.minify');
+Route::get('blade/embed', 'BladeController@getEmbed')->name('blade.embed');
 //Route::resource('','BladeController');

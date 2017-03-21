@@ -19,11 +19,13 @@
       <data directive="@endcannot" />
       <data directive="@endforelse" />
       <data directive="@endphp" />
+      <data directive="@endembed" />
       <data directive="@endsection" />
       <data directive="@if" injection="true" prefix="&lt;?php if (" suffix="): ?&gt;" />
       <data directive="@yield" injection="true" prefix="&lt;?php echo $__env-&gt;yieldContent(" suffix="); ?&gt;" />
       <data directive="@section" injection="true" prefix="&lt;?php $__env-&gt;startSection(" suffix="); ?&gt;" />
       <data directive="@push" injection="true" prefix="&lt;?php $__env-&gt;startSection(" suffix="); ?&gt;" />
+      <data directive="@embed" injection="true" prefix="&lt;?php echo $__env-&gt;make(" suffix=")-&gt;render(); ?&gt;" />
       <data directive="@extends" injection="true" prefix="&lt;?php echo $__env-&gt;make(" suffix=", array_except(get_defined_vars(), array('__data', '__path')))-&gt;render(); ?&gt;" />
       <data directive="@forelse" injection="true" prefix="&lt;?php foreach(" suffix="): ?&gt;" />
       <data directive="@php" injection="true" prefix="&lt;?php" suffix="; ?&gt;" />

@@ -118,20 +118,20 @@ The structure for my PHP projects is a bit complicated.  Here's the gist of it.
         "laravel/framework": "5.3.*",
         "wikimedia/composer-merge-plugin": "~1.3",
         
-        // not using require-dev because this as is a dev project entirely
+        /** not using require-dev because this as is a dev project entirely */
         "barryvdh/laravel-debugbar": "~2.1",
         "barryvdh/laravel-ide-helper": "~2.1",
         
         
         "codex/core": "2.0.*",
-        // because the repository pointing to the workbench of this project
-        // these will be symlinked in the vendor folder
+        /** because the repository pointing to the workbench of this project */
+        /** these will be symlinked in the vendor folder */
         "codex/composer-plugin": "2.0.*",
         "codex/addon-phpdoc": "2.0.*",
         
-        // because the repository pointing to the workbench of 
-        // the 'laradic' dev project, these packages will be symlinked
-        // in the vendor folder.
+        /** because the repository pointing to the workbench of  */
+        /** the 'laradic' dev project, these packages will be symlinked */
+        /** in the vendor folder. */
         "laradic/console": "~1.0",
         "laradic/icon-generator": "~1.0",
         "laradic/idea": "~1.0",

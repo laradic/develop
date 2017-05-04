@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <analysis>
-  <link href="https://insight.sensiolabs.com/api/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2" rel="self" type="application/vnd.com.sensiolabs.insight+xml"/>
-  <link href="https://insight.sensiolabs.com/api/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2/status" rel="status" type="application/vnd.com.sensiolabs.insight+xml"/>
+  <link href="https://insight.sensiolabs.com/api/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3" rel="self" type="application/vnd.com.sensiolabs.insight+xml"/>
+  <link href="https://insight.sensiolabs.com/api/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3/status" rel="status" type="application/vnd.com.sensiolabs.insight+xml"/>
   <link href="https://insight.sensiolabs.com/api/projects/6b4b5438-e347-4439-b625-7cd91676523f" rel="project" type="application/vnd.com.sensiolabs.insight+xml"/>
-  <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2" rel="self" type="text/html"/>
+  <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3" rel="self" type="text/html"/>
   <status><![CDATA[finished]]></status>
   <violations>
     <violation severity="minor" category="codestyle" ignored="false">
@@ -20,7 +20,7 @@ commit.bat
 /_ide_helper.php
 /.idea
 /lara5]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092311" rel="self" type="text/html"/>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=existing#514095736" rel="self" type="text/html"/>
     </violation>
     <violation severity="minor" category="codestyle" ignored="false">
       <line>8</line>
@@ -38,7 +38,7 @@ commit.bat
 /_includes
 /laravel
 /tasks]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092314" rel="self" type="text/html"/>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=existing#514095740" rel="self" type="text/html"/>
     </violation>
     <violation severity="minor" category="codestyle" ignored="false">
       <line>26</line>
@@ -56,33 +56,33 @@ commit.bat
 /psysh.phar
 /app
 /gh-pages]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092303" rel="self" type="text/html"/>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=existing#514095727" rel="self" type="text/html"/>
     </violation>
     <violation severity="minor" category="deadcode" ignored="false">
-      <line>40</line>
-      <resource><![CDATA[src/Directives/EmbeddingDirectives.php]]></resource>
+      <line>28</line>
+      <resource><![CDATA[config/blade-extensions.php]]></resource>
       <title>Commented code should not be committed</title>
       <message><![CDATA[Commented out code reduces readability and lowers the code confidence for other developers. If it's common usage for debug, it should not be committed. Using a version control system, such code can be safely removed.]]></message>
-      <context start-line="35" end-line="45"><![CDATA[     * @return mixed
-     */
-    public function directiveEmbed($value, $pattern, $replacement, Application $app, Compiler $blade)
-    {
-        $replacement = str_replace('\\EOT_', 'EOT_', $replacement);
-        #$replacement = str_replace('EOT_', 'EOT_' . uniqid('embed', false), $replacement);
+      <context start-line="23" end-line="33"><![CDATA[        'continue'   => 'Radic\\BladeExtensions\\Directives\\ContinueDirective',
 
-        $res = array();
-        $str = $value;
-        while (preg_match_all($pattern, $str, $out)) {
-            $replacement = str_replace('EOT_', 'EOT_' . uniqid('embed' . md5($str), false), $replacement);]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092307" rel="self" type="text/html"/>
+        'embed' => 'Radic\\BladeExtensions\\Directives\\EmbedDirective'
+
+//        'closure' => function ($value) {
+//            return $value;
+//        },
+
+    ],
+    // `optional` directives are only used for **unit-testing**
+    // If you want to use any of the `optional` directives, you have to **manually copy/paste** them to `directives`.]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095742" rel="self" type="text/html"/>
     </violation>
     <violation severity="minor" category="deadcode" ignored="false">
-      <line>118</line>
-      <resource><![CDATA[src/Helpers/LoopFactory.php]]></resource>
+      <line>132</line>
+      <resource><![CDATA[src/Helpers/Loop/LoopHelper.php]]></resource>
       <title>Commented code should not be committed</title>
       <message><![CDATA[Commented out code reduces readability and lowers the code confidence for other developers. If it's common usage for debug, it should not be committed. Using a version control system, such code can be safely removed.]]></message>
-      <context start-line="113" end-line="123"><![CDATA[        if (count($this->stack) > 0) {
-        // This loop was inside another loop. We persist the loop variable and assign back the parent loop
+      <context start-line="127" end-line="137"><![CDATA[        if (count($this->stack) > 0) {
+            // This loop was inside another loop. We persist the loop variable and assign back the parent loop
             $loop = end($this->stack);
         } else {
             // This loop was not inside another loop. We remove the var
@@ -92,213 +92,205 @@ commit.bat
     }
 }
 ]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092318" rel="self" type="text/html"/>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095735" rel="self" type="text/html"/>
     </violation>
-    <violation severity="minor" category="deadcode" ignored="false">
-      <line>50</line>
-      <resource><![CDATA[src/Renderers/ParsedownRenderer.php]]></resource>
-      <title>Commented code should not be committed</title>
-      <message><![CDATA[Commented out code reduces readability and lowers the code confidence for other developers. If it's common usage for debug, it should not be committed. Using a version control system, such code can be safely removed.]]></message>
-      <context start-line="45" end-line="54"><![CDATA[     * {@inheritdoc}
-     * @param string $text The text
-     */
-    public function render($text)
-    {
-        #$text = preg_replace('/\s\s\n/', "<br>\n", $text);
-        return $this->parsedown->text($text);
-    }
-}
-]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092305" rel="self" type="text/html"/>
-    </violation>
-    <violation severity="minor" category="performance" ignored="false">
-      <line>54</line>
-      <resource><![CDATA[src/Helpers/Markdown.php]]></resource>
-      <title>Usage of a function in loops should be avoided</title>
-      <message><![CDATA[This loop uses a function. To avoid the overhead of executing the function n times, you should precalculate it before the loop.]]></message>
-      <context start-line="49" end-line="59"><![CDATA[        $firstLine = Str::toSpaces($firstLine[ 0 ], 4);
-        preg_match('/([\s]*).*/', $firstLine, $firstLineSpacesMatches);
-
-        if (isset($firstLineSpacesMatches[ 1 ])) {
-            $spaceMatcher = "";
-            for ($i = 0; $i < strlen($firstLineSpacesMatches[ 1 ]); $i++) {
-                $spaceMatcher .= "\s";
-            }
-            $spaceMatcher = '/^' . $spaceMatcher . '(.*)/m';
-            $newText      = preg_replace($spaceMatcher, '$1', $text);
-]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092315" rel="self" type="text/html"/>
+    <violation severity="critical" category="security" ignored="false">
+      <line>148</line>
+      <resource><![CDATA[src/Helpers/DumpHelper.php]]></resource>
+      <title>PHP debug statements found</title>
+      <message><![CDATA[var_dump() should only be used for debug, and not committed to the source code repository.]]></message>
+      <context start-line="143" end-line="153"><![CDATA[                function () {
+                    return true;
+                },
+                function ($var) {
+                    echo '<pre><code>';
+                    var_dump($var);
+                    echo '</code></pre>';
+                },
+            ],
+        ];
+    }]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095738" rel="self" type="text/html"/>
     </violation>
     <violation severity="info" category="codestyle" ignored="false">
       <line>19</line>
-      <resource><![CDATA[src/Contracts/MarkdownRenderer.php]]></resource>
+      <resource><![CDATA[src/Contracts/BladeExtensions.php]]></resource>
       <title>Interfaces names should end with "Interface"</title>
-      <message><![CDATA[Interface MarkdownRenderer should be named MarkdownRendererInterface for better clarity.]]></message>
-      <context start-line="14" end-line="24"><![CDATA[ * @license            MIT License - http://radic.mit-license.org
- * @copyright          2011-2015, Robin Radic
- * @link               http://robin.radic.nl/blade-extensions
+      <message><![CDATA[Interface BladeExtensions should be named BladeExtensionsInterface for better clarity.]]></message>
+      <context start-line="14" end-line="24"><![CDATA[/**
+ * Provides 'features' methods that are usefull when working with Blade templates.
  *
+ * @author  Robin Radic
  */
-interface MarkdownRenderer
+interface BladeExtensions
 {
     /**
-     * Renders markdown text to html
-     * @param string $text The text
-     * @return mixed]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092312" rel="self" type="text/html"/>
+     * Compile blade syntax to string.
+     *
+     * @api]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095729" rel="self" type="text/html"/>
     </violation>
     <violation severity="info" category="codestyle" ignored="false">
-      <line>12</line>
-      <resource><![CDATA[src/Contracts/Stack.php]]></resource>
+      <line>21</line>
+      <resource><![CDATA[src/Contracts/DirectiveRegistry.php]]></resource>
       <title>Interfaces names should end with "Interface"</title>
-      <message><![CDATA[Interface Stack should be named StackInterface for better clarity.]]></message>
-      <context start-line="7" end-line="17"><![CDATA[ * @package        Radic\BladeExtensions
- * @author         Caffeinated Dev Team
- * @copyright      Copyright (c) 2015, Caffeinated
- * @license        https://tldrlegal.com/license/mit-license MIT License
+      <message><![CDATA[Interface DirectiveRegistry should be named DirectiveRegistryInterface for better clarity.]]></message>
+      <context start-line="16" end-line="26"><![CDATA[/**
+ * Contains the logic for handling the configured directives and version overrides.
+ *
+ * @author  Robin Radic
  */
-interface Stack
+interface DirectiveRegistry
 {
     /**
-     * start
+     * isHooked method.
+     * @return bool
+     */]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095728" rel="self" type="text/html"/>
+    </violation>
+    <violation severity="info" category="codestyle" ignored="false">
+      <line>19</line>
+      <resource><![CDATA[src/Contracts/HelperRepository.php]]></resource>
+      <title>Interfaces names should end with "Interface"</title>
+      <message><![CDATA[Interface HelperRepository should be named HelperRepositoryInterface for better clarity.]]></message>
+      <context start-line="14" end-line="24"><![CDATA[/**
+ * Used for storing instances of helper classes.
+ *
+ * @author  Robin Radic
+ */
+interface HelperRepository
+{
+    /**
+     * Put a helper instance in the repository.
      *
-     * @return \Radic\BladeExtensions\Contracts\Stack]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092313" rel="self" type="text/html"/>
+     * @param string $key      The accessor key]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095737" rel="self" type="text/html"/>
     </violation>
-    <violation severity="minor" category="deadcode" ignored="false">
-      <line>6</line>
-      <resource><![CDATA[resources/views/macros.blade.php]]></resource>
-      <title>PHP code should not contain unreachable code</title>
-      <message><![CDATA[This code is unreachable.]]></message>
-      <context start-line="1" end-line="20"><![CDATA[@macrodef('alert', $type, $content, $dismissible = true)
-<?php
-$dismissible = $dismissible ? "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>\n" : '';
-return "<div class='alert alert-{$type}' role='alert'>{$dismissible}{$content}</div>";
-?>
-@endmacro
-
-
-@macrodef('lia', $label, $href = '#', $listClass = '', $linkClass = '')
-<?php
-$listClass = $listClass == '' ? '' : " class='{$listClass}'";
-$linkClass = $linkClass == '' ? '' : " class='{$linkClass}'";
-return "<li{$listClass}><a href='{$href}'{$linkClass}>{$label}</a></li>";
-?>
-@endmacro
-
-@macrodef('divider', $class = 'divider', $role = 'seperator')
-<?php return "<li role='{$role}' class='{$class}'></li>"; ?>
-@endmacro
-]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092319" rel="self" type="text/html"/>
-    </violation>
-    <violation severity="minor" category="deadcode" ignored="false">
-      <line>37</line>
-      <resource><![CDATA[src/Directives/EmbeddingDirectives.php]]></resource>
-      <title>Unused method, property, variable or parameter</title>
-      <message><![CDATA[This app argument is declared but never used. You should remove it.]]></message>
-      <context start-line="32" end-line="42"><![CDATA[     * @param                                              $replacement
-     * @param \Illuminate\Contracts\Foundation\Application $app
-     * @param \Illuminate\View\Compilers\BladeCompiler     $blade
-     * @return mixed
-     */
-    public function directiveEmbed($value, $pattern, $replacement, Application $app, Compiler $blade)
+    <violation severity="minor" category="bugrisk" ignored="false">
+      <line>114</line>
+      <resource><![CDATA[src/BladeExtensions.php]]></resource>
+      <title>Object parameters should be type hinted</title>
+      <message><![CDATA[The parameter view, which is an object, should be typehinted.]]></message>
+      <context start-line="109" end-line="119"><![CDATA[     */
+    public function pushToStack($stackName, $targetViews, $content)
     {
-        $replacement = str_replace('\\EOT_', 'EOT_', $replacement);
-        #$replacement = str_replace('EOT_', 'EOT_' . uniqid('embed', false), $replacement);
-
-        $res = array();]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092304" rel="self" type="text/html"/>
+        $targetViews = is_array($targetViews) ? $targetViews : [$targetViews];
+        foreach ($targetViews as $targetView) {
+            app()->make('events')->listen('composing: '.$targetView, function ($view) use ($stackName, $content) {
+                $content = $content instanceof Closure ? $content($view) : $content;
+                if (method_exists($view, 'getFactory') && method_exists($view->getFactory(), 'startPush')) {
+                    $view->getFactory()->startPush($stackName, $content);
+                }
+            });]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095730" rel="self" type="text/html"/>
     </violation>
     <violation severity="minor" category="deadcode" ignored="false">
-      <line>37</line>
-      <resource><![CDATA[src/Directives/EmbeddingDirectives.php]]></resource>
+      <line>163</line>
+      <resource><![CDATA[src/DirectiveRegistry.php]]></resource>
       <title>Unused method, property, variable or parameter</title>
-      <message><![CDATA[This blade argument is declared but never used. You should remove it.]]></message>
-      <context start-line="32" end-line="42"><![CDATA[     * @param                                              $replacement
-     * @param \Illuminate\Contracts\Foundation\Application $app
-     * @param \Illuminate\View\Compilers\BladeCompiler     $blade
-     * @return mixed
-     */
-    public function directiveEmbed($value, $pattern, $replacement, Application $app, Compiler $blade)
+      <message><![CDATA[This name use argument is declared but never used. You should remove it.]]></message>
+      <context start-line="158" end-line="168"><![CDATA[    public function call($name, $params = [])
     {
-        $replacement = str_replace('\\EOT_', 'EOT_', $replacement);
-        #$replacement = str_replace('EOT_', 'EOT_' . uniqid('embed', false), $replacement);
-
-        $res = array();]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092317" rel="self" type="text/html"/>
+        if (false === array_key_exists($name, $this->resolved)) {
+            $handler = $this->get($name);
+            if ($handler instanceof Closure) {
+                $this->resolved[ $name ] = function ($value) use ($name, $handler) {
+                    return call_user_func_array($handler, [$value]);
+                };
+            } else {
+                $class = $this->isCallableWithAtSign($handler) ? explode('@', $handler)[ 0 ] : $handler;
+                $method = $this->isCallableWithAtSign($handler) ? explode('@', $handler)[ 1 ] : 'handle';]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095731" rel="self" type="text/html"/>
     </violation>
     <violation severity="minor" category="deadcode" ignored="false">
-      <line>7</line>
-      <resource><![CDATA[src/Compilers/MarkdownCompiler.php]]></resource>
-      <title>Unused use statement should be avoided</title>
-      <message><![CDATA[The class Ciconia\Extension\Gfm is declared but never used. You should remove the use statement.]]></message>
-      <context start-line="2" end-line="12"><![CDATA[/**
- * Markdown compiler
- */
-namespace Radic\BladeExtensions\Compilers;
-
-use Ciconia\Extension\Gfm;
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\View\Compilers\Compiler;
-use Illuminate\View\Compilers\CompilerInterface;
-use Radic\BladeExtensions\Contracts\MarkdownRenderer;
+      <line>174</line>
+      <resource><![CDATA[src/DirectiveRegistry.php]]></resource>
+      <title>Unused method, property, variable or parameter</title>
+      <message><![CDATA[This name use argument is declared but never used. You should remove it.]]></message>
+      <context start-line="169" end-line="179"><![CDATA[                $instance = $this->app->make($class);
+                if ($instance instanceof DirectiveInterface === false) {
+                    throw InvalidDirectiveClassException::forClass($instance);
+                }
+                $instance->setName($name);
+                $this->resolved[ $name ] = function ($value) use ($name, $instance, $method) {
+                    return call_user_func_array([$instance, $method], [$value]);
+                };
+            }
+        }
 ]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092310" rel="self" type="text/html"/>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095741" rel="self" type="text/html"/>
     </violation>
     <violation severity="minor" category="deadcode" ignored="false">
-      <line>7</line>
-      <resource><![CDATA[src/Engines/BladeMarkdownEngine.php]]></resource>
-      <title>Unused use statement should be avoided</title>
-      <message><![CDATA[The class Ciconia\Ciconia is declared but never used. You should remove the use statement.]]></message>
-      <context start-line="2" end-line="12"><![CDATA[/**
- * The blade markdown engine
- */
-namespace Radic\BladeExtensions\Engines;
+      <line>49</line>
+      <resource><![CDATA[src/Helpers/Stacker.php]]></resource>
+      <title>Unused method, property, variable or parameter</title>
+      <message><![CDATA[This args local variable is declared but never used. You should remove it.]]></message>
+      <context start-line="44" end-line="54"><![CDATA[    /**
+     * Adds a Loop to the stack.
+     */
+    public function start()
+    {
+        $stackItem = static::create($args = func_get_args());
+        array_push($this->stack, $stackItem);
+        $stackItem->start();
 
-use Ciconia\Ciconia;
-use Ciconia\Extension\Gfm;
-use Illuminate\View\Compilers\CompilerInterface;
-use Illuminate\View\Engines\CompilerEngine;
-use Radic\BladeExtensions\Contracts\MarkdownRenderer;
-]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092306" rel="self" type="text/html"/>
+        return $stackItem;
+    }]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095739" rel="self" type="text/html"/>
     </violation>
-    <violation severity="minor" category="deadcode" ignored="false">
-      <line>8</line>
-      <resource><![CDATA[src/Engines/BladeMarkdownEngine.php]]></resource>
-      <title>Unused use statement should be avoided</title>
-      <message><![CDATA[The class Ciconia\Extension\Gfm is declared but never used. You should remove the use statement.]]></message>
-      <context start-line="3" end-line="13"><![CDATA[ * The blade markdown engine
+    <violation severity="major" category="bugrisk" ignored="false">
+      <line>26</line>
+      <resource><![CDATA[scripts/check-state.php]]></resource>
+      <title>exit() and die() functions should be avoided</title>
+      <message><![CDATA[This line stops the execution flow, without explanation. If this is for debug, you should remove it. If this is to deal with an error, use exceptions instead.]]></message>
+      <context start-line="21" end-line="31"><![CDATA[ * still working?               > wait
  */
-namespace Radic\BladeExtensions\Engines;
 
-use Ciconia\Ciconia;
-use Ciconia\Extension\Gfm;
-use Illuminate\View\Compilers\CompilerInterface;
-use Illuminate\View\Engines\CompilerEngine;
-use Radic\BladeExtensions\Contracts\MarkdownRenderer;
+function ex($msg)
+{
+    echo $msg;
+    exit(0);
+}
 
-/**]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092316" rel="self" type="text/html"/>
+$content = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR . '.curl-output');
+if ($content === false) {]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095732" rel="self" type="text/html"/>
     </violation>
-    <violation severity="minor" category="deadcode" ignored="false">
-      <line>7</line>
-      <resource><![CDATA[src/Engines/PhpMarkdownEngine.php]]></resource>
-      <title>Unused use statement should be avoided</title>
-      <message><![CDATA[The class Ciconia\Extension\Gfm is declared but never used. You should remove the use statement.]]></message>
-      <context start-line="2" end-line="12"><![CDATA[/**
- * The Parsedown markdown renderer implementation
+    <violation severity="major" category="bugrisk" ignored="false">
+      <line>46</line>
+      <resource><![CDATA[scripts/check-state.php]]></resource>
+      <title>exit() and die() functions should be avoided</title>
+      <message><![CDATA[This line stops the execution flow, without explanation. If this is for debug, you should remove it. If this is to deal with an error, use exceptions instead.]]></message>
+      <context start-line="41" end-line="51"><![CDATA[$total  = count($content[ 'jobs' ]);
+$passed = 0;
+foreach ($content[ 'jobs' ] as $job) {
+    $state = $job[ 'state' ];
+    if ($state === 'failed' || $state === 'canceled') {
+        ex('fail');
+        exit(0);
+    } elseif ($state === 'passed') {
+        $passed++;
+    }
+}]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095743" rel="self" type="text/html"/>
+    </violation>
+    <violation severity="major" category="architecture" ignored="false">
+      <line>23</line>
+      <resource><![CDATA[scripts/check-state.php]]></resource>
+      <title>Global variable or function should never be used</title>
+      <message><![CDATA[ex() adds to the global scope. Prefer class properties or methods to let other developers know what this relates to.]]></message>
+      <context start-line="18" end-line="28"><![CDATA[ * all other jobs passed?       > pass
+ * any job failed?              > fail
+ * any error?                   > error
+ * still working?               > wait
  */
-namespace Radic\BladeExtensions\Engines;
 
-use Ciconia\Extension\Gfm;
-use Illuminate\View\Engines\PhpEngine;
-use Radic\BladeExtensions\Contracts\MarkdownRenderer;
-
-/**
- * The Parsedown markdown renderer implementation]]></context>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092309" rel="self" type="text/html"/>
+function ex($msg)
+{
+    echo $msg;
+    exit(0);
+}]]></context>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=new#514095733" rel="self" type="text/html"/>
     </violation>
     <violation severity="major" category="performance" ignored="false">
       <line>0</line>
@@ -306,7 +298,7 @@ use Radic\BladeExtensions\Contracts\MarkdownRenderer;
       <title>Web applications should contain a favicon</title>
       <message><![CDATA[No favicon found in the web root directory]]></message>
       <context/>
-      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/2?status=new#506092308" rel="self" type="text/html"/>
+      <link href="https://insight.sensiolabs.com/projects/6b4b5438-e347-4439-b625-7cd91676523f/analyses/3?status=existing#514095734" rel="self" type="text/html"/>
     </violation>
   </violations>
   <grades>
@@ -317,16 +309,16 @@ use Radic\BladeExtensions\Contracts\MarkdownRenderer;
     <entry><![CDATA[platinum]]></entry>
   </grades>
   <failed>false</failed>
-  <grade><![CDATA[bronze]]></grade>
-  <next-grade><![CDATA[silver]]></next-grade>
-  <begin-at><![CDATA[2017-03-11T01:00:06+0100]]></begin-at>
-  <end-at><![CDATA[2017-03-11T01:01:02+0100]]></end-at>
-  <duration>5</duration>
-  <number>2</number>
+  <grade><![CDATA[none]]></grade>
+  <next-grade><![CDATA[bronze]]></next-grade>
+  <begin-at><![CDATA[2017-04-11T01:00:05+0200]]></begin-at>
+  <end-at><![CDATA[2017-04-11T01:01:49+0200]]></end-at>
+  <duration>13</duration>
+  <number>3</number>
   <altered>false</altered>
-  <remediation-cost>8</remediation-cost>
+  <remediation-cost>23.75</remediation-cost>
   <nb-violations>17</nb-violations>
-  <reference><![CDATA[87fd45ddb4ce41e0790f452844fbfe67cc671a2e]]></reference>
+  <reference><![CDATA[b043c9b14e7ba09fa69c526b1d1535a35f590a59]]></reference>
   <configuration>
     <ignored-branches>
       <branch><![CDATA[gh-pages]]></branch>
@@ -391,11 +383,12 @@ use Radic\BladeExtensions\Contracts\MarkdownRenderer;
     <env/>
   </configuration>
   <previous-analyses-references>
+    <analysis-reference number="3">b043c9b14e7ba09fa69c526b1d1535a35f590a59</analysis-reference>
     <analysis-reference number="2">87fd45ddb4ce41e0790f452844fbfe67cc671a2e</analysis-reference>
     <analysis-reference number="1">87fd45ddb4ce41e0790f452844fbfe67cc671a2e</analysis-reference>
   </previous-analyses-references>
-  <nb-violations-new>17</nb-violations-new>
-  <nb-violations-existing>0</nb-violations-existing>
-  <nb-violations-fixed>0</nb-violations-fixed>
+  <nb-violations-new>13</nb-violations-new>
+  <nb-violations-existing>4</nb-violations-existing>
+  <nb-violations-fixed>13</nb-violations-fixed>
   <nb-violations-ignored>0</nb-violations-ignored>
 </analysis>

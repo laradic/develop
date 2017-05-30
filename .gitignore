@@ -7,3 +7,4 @@ Homestead.json
 /.idea/workspace.xml
 /.tmp
 tests/_output/*
+/.idea
